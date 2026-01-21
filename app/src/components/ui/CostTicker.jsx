@@ -209,7 +209,7 @@ export default function CostTicker() {
                         className="border-t border-[var(--border-main)] px-6 py-5"
                     >
                         {/* Cost Categories Grid */}
-                        <div className="grid grid-cols-4 gap-4">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
                             <CostCategory
                                 icon={Layers}
                                 label="Materials"

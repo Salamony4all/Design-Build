@@ -105,7 +105,7 @@ function RenderSettingsPanel({ settings, onSettingsChange, hasFirstRender }) {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {/* Camera View */}
                     <div className="space-y-2">
                         <label className="flex items-center gap-2 text-sm font-semibold text-gray-700">
@@ -401,15 +401,15 @@ function NanoPananaChat({
                         const isLatestProcessable = msg.canProcess && idx === allProcessableIndices[allProcessableIndices.length - 1];
 
                         return (
-                            <div key={msg.id} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>
-                                <div className={`max-w-[85%] rounded-[48px] px-16 py-10 text-[20px] leading-relaxed shadow-sm ${msg.role === 'user' ? 'bg-blue-600 text-white shadow-xl shadow-blue-200/50' : 'bg-white text-gray-800 border border-gray-100'}`}>
+                            <div key={msg.id} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'} w-full`}>
+                                <div className={`max-w-[95%] md:max-w-[85%] rounded-[24px] md:rounded-[48px] px-6 py-4 md:px-16 md:py-10 text-[16px] md:text-[20px] leading-relaxed shadow-sm ${msg.role === 'user' ? 'bg-blue-600 text-white shadow-xl shadow-blue-200/50' : 'bg-white text-gray-800 border border-gray-100'}`}>
                                     {msg.content}
                                     {msg.image && (
-                                        <div className="mt-10 flex flex-col gap-6">
-                                            <div className="rounded-[38px] overflow-hidden shadow-2xl cursor-zoom-in group relative" onClick={() => onImageClick?.(msg.image)}>
+                                        <div className="mt-6 md:mt-10 flex flex-col gap-4 md:gap-6">
+                                            <div className="rounded-[20px] md:rounded-[38px] overflow-hidden shadow-2xl cursor-zoom-in group relative" onClick={() => onImageClick?.(msg.image)}>
                                                 <img src={msg.image} alt="Generated" className="w-full transition-transform duration-700 group-hover:scale-105" />
                                                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                                                    <Maximize2 className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={48} />
+                                                    <Maximize2 className="text-white opacity-0 group-hover:opacity-100 transition-opacity" size={32} />
                                                 </div>
                                             </div>
 
@@ -417,7 +417,7 @@ function NanoPananaChat({
                                                 <button
                                                     disabled={isGeneratingRender}
                                                     onClick={() => handleFullProcess(msg.associatedFile, msg.associatedPrompt, msg.associatedRender)}
-                                                    className={`self-center flex items-center gap-3 px-12 py-5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold text-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all group ${isGeneratingRender ? 'opacity-50 cursor-not-allowed shadow-none scale-100' : 'shadow-xl'
+                                                    className={`self-center flex items-center gap-3 px-6 py-3 md:px-12 md:py-5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white font-bold text-base md:text-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all group ${isGeneratingRender ? 'opacity-50 cursor-not-allowed shadow-none scale-100' : 'shadow-xl'
                                                         }`}
                                                 >
                                                     {isGeneratingRender ? (
@@ -434,7 +434,7 @@ function NanoPananaChat({
                                         <div className="mt-8 flex justify-center">
                                             <button
                                                 onClick={() => openModal('export')}
-                                                className="flex items-center gap-4 px-12 py-6 rounded-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-xl font-bold hover:shadow-2xl hover:scale-105 transition-all shadow-xl shadow-blue-500/20 active:scale-95 group"
+                                                className="flex items-center gap-3 md:gap-4 px-8 py-4 md:px-12 md:py-6 rounded-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-base md:text-xl font-bold hover:shadow-2xl hover:scale-105 transition-all shadow-xl shadow-blue-500/20 active:scale-95 group"
                                             >
                                                 <Download size={28} className="group-hover:animate-bounce" />
                                                 <span>Export Package</span>
@@ -452,7 +452,7 @@ function NanoPananaChat({
     }
 
     return (
-        <div className="w-full px-4 pb-12 flex flex-col items-center">
+        <div className="w-full px-4 pb-8 md:pb-12 flex flex-col items-center">
             {/* File Previews - Large High-Detail Floating Thumbs */}
             {/* Tray shows either the Latest Render (Primary) or Uploaded Files */}
             {generatedRender ? (
@@ -511,9 +511,9 @@ function NanoPananaChat({
                 })
             )}
 
-            <div className="bg-white rounded-[64px] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.04)] border border-gray-100 transition-all duration-700 focus-within:shadow-[0_48px_160px_rgba(0,0,0,0.12)] relative w-full max-w-[1100px]">
+            <div className="bg-white rounded-[32px] md:rounded-[64px] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.04)] border border-gray-100 transition-all duration-700 focus-within:shadow-[0_48px_160px_rgba(0,0,0,0.12)] relative w-full max-w-[1100px]">
                 <input type="file" ref={fileInputRef} onChange={handleFileChange} className="hidden" multiple accept="image/*,.pdf,.dwg,.dxf" />
-                <div className="flex flex-col w-full px-24 lg:px-36 py-24">
+                <div className="flex flex-col w-full px-6 md:px-24 lg:px-36 py-8 md:py-24">
                     {/* Input Area - Hidden before first render if files uploaded (use settings panel instead) */}
                     {(hasFirstRender || uploadedFiles.length === 0) && (
                         <div className="w-full flex justify-center">
@@ -528,8 +528,8 @@ function NanoPananaChat({
                                         e.target.style.height = Math.min(e.target.scrollHeight, 400) + 'px';
                                     }}
                                     onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleSend(); } }}
-                                    placeholder={hasFirstRender ? "Refine your design... (e.g., 'add warmer lighting', 'change to marble floors')" : "Ask Design & Build"}
-                                    className="w-full bg-transparent border-none p-0 text-[24px] text-gray-800 placeholder-gray-400 focus:outline-none disabled:opacity-50 resize-none font-semibold leading-relaxed custom-scrollbar shadow-none text-center"
+                                    placeholder={hasFirstRender ? "Refine your design..." : "Ask Design & Build"}
+                                    className="w-full bg-transparent border-none p-0 text-[18px] md:text-[24px] text-gray-800 placeholder-gray-400 focus:outline-none disabled:opacity-50 resize-none font-semibold leading-relaxed custom-scrollbar shadow-none text-center"
                                 />
                             </div>
                         </div>
@@ -581,22 +581,22 @@ function Preview3DSection({ onShowViewport }) {
     };
 
     return (
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full space-y-12 text-center mt-12 mb-32 relative z-20">
-            <div className="p-16 lg:p-24 rounded-[64px] bg-white border border-gray-100 shadow-xl overflow-hidden relative group max-w-[1100px] mx-auto transition-all hover:shadow-[0_48px_160px_rgba(0,0,0,0.1)]">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full space-y-8 md:space-y-12 text-center mt-8 md:mt-12 mb-20 md:mb-32 relative z-20">
+            <div className="p-8 md:p-16 lg:p-24 rounded-[32px] md:rounded-[64px] bg-white border border-gray-100 shadow-xl overflow-hidden relative group max-w-[1100px] mx-auto transition-all hover:shadow-[0_48px_160px_rgba(0,0,0,0.1)]">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 to-purple-50/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative z-10 flex flex-col items-center gap-8">
-                    <div className="w-24 h-24 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shadow-sm"><CheckCircle size={48} /></div>
+                    <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shadow-sm"><CheckCircle size={32} /></div>
                     <div>
-                        <h3 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">Design Architecture Ready</h3>
-                        <p className="text-xl text-gray-400 font-medium font-mono uppercase tracking-widest text-[14px]">Immersive 3D Experience & BOQ Generated</p>
+                        <h3 className="text-2xl md:text-5xl font-bold text-gray-900 mb-2 md:mb-4 tracking-tight">Design Architecture Ready</h3>
+                        <p className="text-sm md:text-xl text-gray-400 font-medium font-mono uppercase tracking-widest text-[12px] md:text-[14px]">Immersive 3D Experience & BOQ Generated</p>
                     </div>
-                    <div className="flex gap-6 mt-6">
-                        <button onClick={onShowViewport} className="flex items-center gap-4 px-12 py-6 rounded-[24px] bg-blue-600 text-white text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 active:scale-95">
-                            <Box size={28} />
+                    <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mt-4 md:mt-6">
+                        <button onClick={onShowViewport} className="flex items-center gap-3 md:gap-4 px-8 py-4 md:px-12 md:py-6 rounded-[16px] md:rounded-[24px] bg-blue-600 text-white text-lg md:text-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 active:scale-95">
+                            <Box size={24} />
                             <span>Enter Viewport</span>
                         </button>
-                        <button onClick={handleExport} className="flex items-center gap-4 px-12 py-6 rounded-[24px] bg-white text-gray-900 border border-gray-200 text-xl font-bold hover:bg-gray-50 transition-all shadow-sm active:scale-95">
-                            <Download size={28} />
+                        <button onClick={handleExport} className="flex items-center gap-3 md:gap-4 px-8 py-4 md:px-12 md:py-6 rounded-[16px] md:rounded-[24px] bg-white text-gray-900 border border-gray-200 text-lg md:text-xl font-bold hover:bg-gray-50 transition-all shadow-sm active:scale-95">
+                            <Download size={24} />
                             <span>Export Package</span>
                         </button>
                     </div>

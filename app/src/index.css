@@ -143,6 +143,13 @@ body,
   transition: background-color 0.15s ease-out, color 0.15s ease-out;
 }
 
+/* Mobile Base Adjustments */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 /* Instant theme transitions for all elements */
 *:not(input):not(textarea) {
   transition: background-color 0.15s ease-out,
@@ -191,8 +198,8 @@ h4 {
   justify-content: center !important;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   padding: 2rem;
 }
 
@@ -218,8 +225,8 @@ h4 {
 
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   z-index: 100;
 }
 
@@ -231,6 +238,7 @@ header {
   background-color: var(--bg-header);
   border-bottom: 1px solid var(--border-main);
   height: 56px;
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   z-index: 50;
 }
@@ -555,6 +563,7 @@ input[type="range"]:disabled::-webkit-slider-thumb {
 
 .glass-card {
   background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
@@ -607,10 +616,56 @@ input[type="range"]:disabled::-webkit-slider-thumb {
 }
 
 .grid-overlay {
-  background-image:
-    linear-gradient(var(--grid-color) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: 50px 50px;
+}
+
+/* ============================================================================
+   Mobile Responsive Adjustments
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 20px 0 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-overlay {
+    padding: 1rem;
+  }
+
+  .glass-modal {
+    width: 100% !important;
+    max-height: 90vh;
+  }
+
+  /* Responsive Spacing Utilities */
+  .mobile-p-4 {
+    padding: 1rem !important;
+  }
+
+  .mobile-px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .mobile-w-full {
+    width: 100% !important;
+  }
+
+  .mobile-text-center {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .ticker-bar {
+    height: auto !important;
+    min-height: 56px;
+    padding: 0.5rem 0;
+  }
 }
 
 /* ============================================================================
