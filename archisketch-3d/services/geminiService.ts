@@ -14,10 +14,10 @@ async function withRetry<T>(fn: () => Promise<T>, maxRetries = 3): Promise<T> {
     } catch (err: any) {
       lastError = err;
       const status = err.status || (err.message?.match(/\b(503|429)\b/) ? parseInt(err.message.match(/\b(503|429)\b/)[0]) : null);
-      const isRetryable = status === 503 || status === 429 || 
-                          err.message?.toLowerCase().includes("overloaded") ||
-                          err.message?.toLowerCase().includes("unavailable");
-      
+      const isRetryable = status === 503 || status === 429 ||
+        err.message?.toLowerCase().includes("overloaded") ||
+        err.message?.toLowerCase().includes("unavailable");
+
       if (isRetryable && i < maxRetries - 1) {
         // Exponential backoff: 1s, 2s, 4s... with jitter
         const delay = Math.pow(2, i) * 1000 + Math.random() * 1000;
@@ -38,7 +38,7 @@ export const transformLayoutTo3D = async (imageB64: string, mimeType: string): P
   return withRetry(async () => {
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const response = await ai.models.generateContent({
-      model: 'gemini-3-pro-preview',
+      model: 'gemini-2.0-flash',
       contents: [
         {
           inlineData: {
@@ -69,13 +69,13 @@ Instructions:
                 type: Type.OBJECT,
                 properties: {
                   id: { type: Type.STRING },
-                  start: { 
-                    type: Type.OBJECT, 
-                    properties: { x: { type: Type.NUMBER }, y: { type: Type.NUMBER } } 
+                  start: {
+                    type: Type.OBJECT,
+                    properties: { x: { type: Type.NUMBER }, y: { type: Type.NUMBER } }
                   },
-                  end: { 
-                    type: Type.OBJECT, 
-                    properties: { x: { type: Type.NUMBER }, y: { type: Type.NUMBER } } 
+                  end: {
+                    type: Type.OBJECT,
+                    properties: { x: { type: Type.NUMBER }, y: { type: Type.NUMBER } }
                   },
                   height: { type: Type.NUMBER },
                   thickness: { type: Type.NUMBER },
@@ -91,9 +91,9 @@ Instructions:
                 properties: {
                   id: { type: Type.STRING },
                   type: { type: Type.STRING, description: "e.g., chair, table, sofa, bed" },
-                  position: { 
-                    type: Type.OBJECT, 
-                    properties: { x: { type: Type.NUMBER }, y: { type: Type.NUMBER } } 
+                  position: {
+                    type: Type.OBJECT,
+                    properties: { x: { type: Type.NUMBER }, y: { type: Type.NUMBER } }
                   },
                   rotation: { type: Type.NUMBER },
                   scale: { type: Type.ARRAY, items: { type: Type.NUMBER } }
@@ -122,7 +122,7 @@ export const editLayoutImage = async (imageB64: string, mimeType: string, prompt
   return withRetry(async () => {
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-image',
+      model: 'gemini-2.0-flash',
       contents: {
         parts: [
           { inlineData: { data: imageB64, mimeType: mimeType } },

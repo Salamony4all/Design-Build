@@ -23,7 +23,7 @@ export async function parseCADFile(file) {
             sourceType: 'DWG (Vision Enhanced)',
             cadMetadata: {
                 format: 'Binary DWG',
-                engine: 'Vision Lead Gemini 3 Pro'
+                engine: 'Vision Lead Gemini 2.0 Flash'
             }
         };
     }

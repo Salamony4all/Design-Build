@@ -15,7 +15,7 @@ const App: React.FC = () => {
   const [sceneData, setSceneData] = useState<SceneData | null>(null);
   const [originalImage, setOriginalImage] = useState<string | null>(null);
   const [editPrompt, setEditPrompt] = useState('');
-  
+
   const [config, setConfig] = useState<SceneConfig>({
     ambientIntensity: 0.5,
     pointLightIntensity: 1,
@@ -59,7 +59,7 @@ const App: React.FC = () => {
       setOriginalImage(b64);
       const mimeType = file.type;
       const base64Data = b64.split(',')[1];
-      
+
       setIsLoading(true);
       setError(null);
       try {
@@ -83,7 +83,7 @@ const App: React.FC = () => {
 
   const handleEditImage = async () => {
     if (!originalImage || !editPrompt) return;
-    
+
     setIsLoading(true);
     setError(null);
     try {
@@ -91,7 +91,7 @@ const App: React.FC = () => {
       const base64Data = originalImage.split(',')[1];
       const result = await editLayoutImage(base64Data, mimeType, editPrompt);
       setOriginalImage(result);
-      
+
       const resultBase64 = result.split(',')[1];
       const data = await transformLayoutTo3D(resultBase64, "image/png");
       setSceneData(data);
@@ -110,7 +110,7 @@ const App: React.FC = () => {
           <Cpu className="w-16 h-16 text-blue-500 mx-auto mb-6" />
           <h1 className="text-2xl font-bold text-white mb-4">Gemini 3D Architect</h1>
           <p className="text-slate-400 mb-8 leading-relaxed">
-            Architectural analysis requires Gemini 3 series models. Please select a paid API key to continue.
+            Architectural analysis is now powered by Gemini 2.0 Flash for maximum speed and cost efficiency.
             <br />
             <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline text-sm block mt-2">
               Billing Docs
@@ -164,10 +164,10 @@ const App: React.FC = () => {
 
             {originalImage && (
               <div className="space-y-3">
-                 <span className="text-xs font-bold text-slate-500 block tracking-widest uppercase">Current Reference</span>
-                 <div className="rounded-lg overflow-hidden border border-slate-700 bg-slate-800/50 p-2">
-                   <img src={originalImage} alt="Layout" className="w-full h-auto max-h-40 object-contain rounded" />
-                 </div>
+                <span className="text-xs font-bold text-slate-500 block tracking-widest uppercase">Current Reference</span>
+                <div className="rounded-lg overflow-hidden border border-slate-700 bg-slate-800/50 p-2">
+                  <img src={originalImage} alt="Layout" className="w-full h-auto max-h-40 object-contain rounded" />
+                </div>
               </div>
             )}
           </div>
@@ -195,30 +195,30 @@ const App: React.FC = () => {
           )}
 
           <div className="space-y-4">
-             <span className="text-xs font-bold text-slate-500 block border-b border-slate-800 pb-2 tracking-widest uppercase">Rendering</span>
-             <div className="space-y-4">
-               <div>
-                 <div className="flex justify-between text-xs text-slate-500 mb-2 font-medium">
-                   <span>Exposure</span>
-                   <span>{(config.ambientIntensity * 100).toFixed(0)}%</span>
-                 </div>
-                 <input
-                   type="range" min="0" max="1" step="0.1"
-                   value={config.ambientIntensity}
-                   onChange={(e) => setConfig({ ...config, ambientIntensity: parseFloat(e.target.value) })}
-                   className="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
-                 />
-               </div>
-               <div className="flex items-center justify-between">
-                 <span className="text-xs font-medium text-slate-400">Environment Grid</span>
-                 <button
-                   onClick={() => setConfig({ ...config, showGrid: !config.showGrid })}
-                   className={`w-10 h-5 rounded-full transition-colors relative ${config.showGrid ? 'bg-blue-600' : 'bg-slate-700'}`}
-                 >
-                   <div className={`absolute top-1 w-3 h-3 bg-white rounded-full transition-all ${config.showGrid ? 'left-6' : 'left-1'}`} />
-                 </button>
-               </div>
-             </div>
+            <span className="text-xs font-bold text-slate-500 block border-b border-slate-800 pb-2 tracking-widest uppercase">Rendering</span>
+            <div className="space-y-4">
+              <div>
+                <div className="flex justify-between text-xs text-slate-500 mb-2 font-medium">
+                  <span>Exposure</span>
+                  <span>{(config.ambientIntensity * 100).toFixed(0)}%</span>
+                </div>
+                <input
+                  type="range" min="0" max="1" step="0.1"
+                  value={config.ambientIntensity}
+                  onChange={(e) => setConfig({ ...config, ambientIntensity: parseFloat(e.target.value) })}
+                  className="w-full h-1 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                />
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-medium text-slate-400">Environment Grid</span>
+                <button
+                  onClick={() => setConfig({ ...config, showGrid: !config.showGrid })}
+                  className={`w-10 h-5 rounded-full transition-colors relative ${config.showGrid ? 'bg-blue-600' : 'bg-slate-700'}`}
+                >
+                  <div className={`absolute top-1 w-3 h-3 bg-white rounded-full transition-all ${config.showGrid ? 'left-6' : 'left-1'}`} />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -234,14 +234,14 @@ const App: React.FC = () => {
 
         <div className="p-4 border-t border-slate-800 flex gap-2 bg-slate-900/80 backdrop-blur-sm">
           <button
-             onClick={() => setActiveTab('3d')}
-             className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 ${activeTab === '3d' ? 'bg-blue-600 text-white shadow-lg' : 'hover:bg-slate-800 text-slate-500'}`}
+            onClick={() => setActiveTab('3d')}
+            className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 ${activeTab === '3d' ? 'bg-blue-600 text-white shadow-lg' : 'hover:bg-slate-800 text-slate-500'}`}
           >
             <Box className="w-4 h-4" /> 3D VIEW
           </button>
           <button
-             onClick={() => setActiveTab('edit')}
-             className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 ${activeTab === 'edit' ? 'bg-indigo-600 text-white shadow-lg' : 'hover:bg-slate-800 text-slate-500'}`}
+            onClick={() => setActiveTab('edit')}
+            className={`flex-1 py-2.5 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-2 ${activeTab === 'edit' ? 'bg-indigo-600 text-white shadow-lg' : 'hover:bg-slate-800 text-slate-500'}`}
           >
             <ImageIcon className="w-4 h-4" /> EDITING
           </button>

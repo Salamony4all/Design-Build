@@ -1,12 +1,12 @@
 /**
  * Design & Build - Nano Panana Pro Service
- * Advanced AI-Powered 3D Scene Generation using Gemini 3 Pro Preview
+ * Advanced AI-Powered 3D Scene Generation using Gemini 2.0 Flash
  * 
  * This service integrates the archisketch-3d functionality into the D&B workflow.
  * It uses the @google/genai SDK for superior 3D scene generation from floor plans.
  * 
  * Features:
- * - Gemini 3 Pro Preview for architectural analysis
+ * - Gemini 2.0 Flash for architectural analysis
  * - Structured JSON output for 3D scene data (walls, furniture, colors)
  * - Image editing capabilities with gemini-2.5-flash-image
  * - Automatic retry with exponential backoff for rate limiting
@@ -15,8 +15,8 @@
 // Nano Panana Pro API Configuration
 const NANO_PANANA_CONFIG = {
     apiKey: import.meta.env.VITE_NANO_PANANA_API_KEY || '',
-    model: 'gemini-3-pro-preview',
-    imageEditModel: 'gemini-2.5-flash-image',
+    model: 'gemini-2.0-flash',
+    imageEditModel: 'gemini-2.0-flash', // Optimization: Using Flash for analysis tasks
     baseUrl: 'https://generativelanguage.googleapis.com/v1beta',
 };
 
@@ -744,7 +744,7 @@ export async function generateCompleteVisualization(
         updateProgress('AI Processing', 15, 'Extracting structure and generating visualization simultaneously...');
 
         const [analysisResult, renderImage] = await Promise.all([
-            // Path A: The Structural Brain (Gemini 1.5 Pro)
+            // Path A: The Structural Brain (Gemini 2.0 Flash)
             (async () => {
                 try {
                     const result = await transformLayoutTo3D(file, base64Data);
