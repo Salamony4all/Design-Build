@@ -80,39 +80,32 @@ export async function generateCompletePPTX() {
 
     // Set presentation properties
     pptx.author = 'Design & Build';
-    pptx.company = project.client || 'Design & Build';
-    pptx.title = project.name || 'Design Proposal';
+    pptx.company = sanitize(project.client || 'Design & Build');
+    pptx.title = sanitize(project.name || 'Design Proposal');
     pptx.subject = 'Architectural Design Presentation';
 
-    // Define master slide
-    pptx.defineSlideMaster({
-        title: 'DNB_MASTER',
-        background: { color: BRAND_COLORS.dark },
-        margin: [0.5, 0.5, 0.5, 0.5],
-        objects: [
-            // Footer bar
-            { rect: { x: 0, y: 6.8, w: '100%', h: 0.7, fill: { color: BRAND_COLORS.darker } } },
-            // Footer text
-            {
-                text: {
-                    text: `${sanitize(project.client)} | Design & Build`,
-                    options: { x: 0.5, y: 6.95, w: 5, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.primary }
-                }
-            },
-            // Simplified Page number (No native type for now to ensure compatibility)
-            {
-                text: {
-                    text: 'Architectural Design Proposal 2026',
-                    options: { x: 7.5, y: 6.95, w: 2, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.mono, align: 'right' }
-                }
-            },
-        ],
-    });
+    // Helper: Add static branding to a slide (Replaces Master Slides for better compatibility)
+    const applyBranding = (slide) => {
+        slide.background = { color: BRAND_COLORS.dark };
 
-    // ============================================================================
+        // Footer bar
+        slide.addShape(pptx.ShapeType.rect, { x: 0, y: 6.8, w: '100%', h: 0.7, fill: { color: BRAND_COLORS.darker } });
+
+        // Footer text
+        slide.addText(`${sanitize(project.client)} | Design & Build`, {
+            x: 0.5, y: 6.95, w: 5, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.primary
+        });
+
+        // Static info
+        slide.addText('Architectural Design Proposal 2026', {
+            x: 7.5, y: 6.95, w: 2, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.mono, align: 'right'
+        });
+    };
+
     // SLIDE 1: Title Slide
     // ============================================================================
-    const slide1 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide1 = pptx.addSlide();
+    applyBranding(slide1);
 
     // Background gradient overlay
     slide1.addShape(pptx.ShapeType.rect, {
@@ -162,18 +155,17 @@ export async function generateCompletePPTX() {
     });
 
     // Add Cover Render if available
-    if (nanoPananaRenders.length > 0 && nanoPananaRenders[0].image) {
+    if (nanoPananaRenders.length > 0 && isValidBase64Image(nanoPananaRenders[0].image)) {
         slide1.addImage({
             data: nanoPananaRenders[0].image,
-            x: 5.5, y: 1.5, w: 4, h: 4,
-            rounding: true
+            x: 5.5, y: 1.5, w: 4, h: 4
         });
     }
 
-    // ============================================================================
     // SLIDE 2: Design Philosophy (Enhanced with Nano Banana Data)
     // ============================================================================
-    const slide2 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide2 = pptx.addSlide();
+    applyBranding(slide2);
 
     slide2.addText('Design Philosophy', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -254,10 +246,10 @@ export async function generateCompletePPTX() {
         color: BRAND_COLORS.success, align: 'center',
     });
 
-    // ============================================================================
     // SLIDE 3: Space Analysis
     // ============================================================================    // SLIDE 3: Space Analysis
-    const slide3 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide3 = pptx.addSlide();
+    applyBranding(slide3);
 
     slide3.addText('Space Analysis', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -299,10 +291,10 @@ export async function generateCompletePPTX() {
         });
     }
 
-    // ============================================================================
     // SLIDE 4: Material Palette (Solid Color Swatches - Clean Professional Style)
     // ============================================================================
-    const slide4 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide4 = pptx.addSlide();
+    applyBranding(slide4);
 
     slide4.addText('Material Palette', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -378,8 +370,7 @@ export async function generateCompletePPTX() {
         slide4.addShape(pptx.ShapeType.rect, {
             x: 0.5 + (i * 1.8), y: 1.4, w: 1.6, h: 1.6,
             fill: { color: swatchColor },
-            line: { color: BRAND_COLORS.primary, width: 2 },
-            shadow: { type: 'outer', blur: 8, offset: 3, angle: 45, opacity: 0.25 },
+            line: { color: BRAND_COLORS.primary, width: 2 }
         });
 
         // Material name
@@ -419,10 +410,10 @@ export async function generateCompletePPTX() {
         return data.startsWith('data:image/');
     };
 
-    // ============================================================================
     // SLIDE 5: Floor Plan Layout
     // ============================================================================
-    const slide5 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide5 = pptx.addSlide();
+    applyBranding(slide5);
 
     slide5.addText('Floor Plan Layout', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -456,10 +447,10 @@ export async function generateCompletePPTX() {
         color: BRAND_COLORS.muted, align: 'center',
     });
 
-    // ============================================================================
     // SLIDE 6: 3D Visualization
     // ============================================================================
-    const slide6 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide6 = pptx.addSlide();
+    applyBranding(slide6);
 
     slide6.addText('3D Visualization', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -495,13 +486,11 @@ export async function generateCompletePPTX() {
         color: BRAND_COLORS.muted, align: 'center',
     });
 
-    // ============================================================================
-    // SLIDE 7 & 8: Room Details
-    // ============================================================================
     const keyRooms = detectedRooms.slice(0, 2);
 
     keyRooms.forEach((room, idx) => {
-        const slide = pptx.addSlide({ masterName: 'DNB_MASTER' });
+        const slide = pptx.addSlide();
+        applyBranding(slide);
 
         slide.addText(`Room Detail: ${sanitize(room.label)}`, {
             x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -562,10 +551,10 @@ export async function generateCompletePPTX() {
         });
     });
 
-    // ============================================================================
     // SLIDE 9: BOQ Summary
     // ============================================================================    // SLIDE 9: BOQ Summary
-    const slide9 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide9 = pptx.addSlide();
+    applyBranding(slide9);
 
     slide9.addText('Bill of Quantities', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
@@ -602,10 +591,10 @@ export async function generateCompletePPTX() {
         colW: [1, 3.5, 0.7, 0.6, 1.1, 1.3],
     });
 
-    // ============================================================================
     // SLIDE 10: Financial Summary
     // ============================================================================    // SLIDE 10: Financial Summary
-    const slide10 = pptx.addSlide({ masterName: 'DNB_MASTER' });
+    const slide10 = pptx.addSlide();
+    applyBranding(slide10);
 
     slide10.addText('Financial Summary', {
         x: 0.5, y: 0.5, w: 9, h: 0.6,
