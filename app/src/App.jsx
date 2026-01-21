@@ -72,22 +72,19 @@ function SplashScreen({ onComplete }) {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, type: 'spring' }}
         >
-          {/* Outer Ring */}
-          <motion.div
-            className="w-28 h-28 rounded-full border-4 border-cyan-500/30"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-          />
-          {/* Inner Ring */}
-          <motion.div
-            className="absolute inset-2 rounded-full border-4 border-t-cyan-500 border-r-transparent border-b-transparent border-l-transparent"
-            animate={{ rotate: -360 }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-          />
-          {/* Center Icon */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-xl shadow-cyan-500/30">
-              <span className="text-2xl font-black text-white">AI</span>
+          {/* Animated Glow Wrapper */}
+          <div className="relative">
+            <motion.div
+              className="absolute -inset-4 rounded-full bg-cyan-500/20 blur-2xl"
+              animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
+              transition={{ duration: 3, repeat: Infinity }}
+            />
+            <div className="w-32 h-32 rounded-3xl overflow-hidden border-2 border-cyan-500/30 shadow-2xl shadow-cyan-500/20 relative z-10">
+              <img
+                src="/logo.jpg"
+                alt="Design & Build Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>
@@ -230,7 +227,7 @@ export default function App() {
       console.log('[App] Clearing persisted BOQ items for fresh session start');
       boqState.clearScene();
     }
-    
+
     loadBOQLibrary();
   }, []);
 

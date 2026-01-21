@@ -126,11 +126,13 @@ export default function CostTicker() {
                 <div className="flex items-center gap-5">
                     <div className="flex items-center gap-3">
                         <div className="relative">
-                            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[var(--accent-primary)] to-blue-600 flex items-center justify-center shadow-lg shadow-[var(--accent-primary)]/30">
-                                <Calculator size={18} className="text-white" />
+                            <div className="w-10 h-10 rounded-xl overflow-hidden border border-[var(--border-main)] shadow-lg shadow-blue-500/10 transition-all hover:scale-105 active:scale-95 cursor-pointer">
+                                <img
+                                    src="/logo.jpg"
+                                    alt="Logo"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
-                            {/* Pulse indicator */}
-                            <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500 border-2 border-[var(--bg-secondary)] animate-pulse" />
                         </div>
                         <div>
                             <h3 className="text-sm font-bold text-[var(--text-primary)] tracking-tight flex items-center gap-1.5">

@@ -23,16 +23,14 @@ function Logo() {
     return (
         <div className="flex items-center gap-3">
             <motion.div
-                className="relative w-10 h-10"
+                className="relative w-10 h-10 overflow-hidden rounded-xl border border-[var(--border-main)]"
                 whileHover={{ scale: 1.05 }}
             >
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-cyan-500 via-blue-600 to-purple-600" />
-                <div className="absolute inset-[2px] rounded-[10px] bg-[var(--bg-primary)] flex items-center justify-center">
-                    <span className="text-sm font-black bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                        D&B
-                    </span>
-                </div>
-                <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-cyan-500 to-purple-500 opacity-20 blur-md -z-10" />
+                <img
+                    src="/logo.jpg"
+                    alt="Logo"
+                    className="w-full h-full object-cover"
+                />
             </motion.div>
 
             <div>

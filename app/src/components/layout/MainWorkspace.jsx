@@ -611,7 +611,13 @@ function ViewportMode({ onClose }) {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[100] bg-white flex flex-col">
             <div className="flex-shrink-0 flex items-center justify-between px-10 py-6 border-b border-gray-100 bg-white/80 backdrop-blur-md">
                 <div className="flex items-center gap-6">
-                    <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center shadow-lg"><span className="text-white font-black">AI</span></div>
+                    <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                        <img
+                            src="/logo.jpg"
+                            alt="Logo"
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
                     <div>
                         <h2 className="text-2xl font-bold text-gray-900">Virtual Preview</h2>
                         <p className="text-sm text-gray-400 font-mono uppercase tracking-[0.2em]">Photorealistic Engine</p>
