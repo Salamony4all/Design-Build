@@ -23,7 +23,7 @@ function Logo() {
     return (
         <div className="flex items-center gap-3">
             <motion.div
-                className="relative w-10 h-10 overflow-hidden rounded-xl border border-[var(--border-main)]"
+                className="relative w-10 h-10 overflow-hidden rounded-xl border border-white/20 shadow-[0_8px_20px_rgba(0,0,0,0.12),inset_0_-2px_4px_rgba(0,0,0,0.1)] transition-all"
                 whileHover={{ scale: 1.05 }}
             >
                 <img

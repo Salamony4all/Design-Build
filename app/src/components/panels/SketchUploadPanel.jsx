@@ -169,8 +169,8 @@ export default function SketchUploadPanel() {
             {/* Header */}
             <div className="px-4 py-3 border-b border-studio-border">
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                        <Brain size={16} className="text-white" />
+                    <div className="w-8 h-8 rounded-lg overflow-hidden border border-white/10 shadow-[0_4px_12px_rgba(0,0,0,0.1),inset_0_-1px_2px_rgba(0,0,0,0.1)]">
+                        <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
                     </div>
                     <div>
                         <h2 className="font-semibold text-white text-sm">Design & Build Intelligence</h2>
@@ -458,11 +458,11 @@ export default function SketchUploadPanel() {
                             className="h-full flex flex-col items-center justify-center"
                         >
                             <motion.div
-                                className="relative w-20 h-20 mb-6"
+                                className="relative w-20 h-20 mb-6 rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/10 border border-yellow-500/20"
                                 animate={{ rotate: 360 }}
-                                transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
+                                transition={{ duration: 10, repeat: Infinity, ease: 'linear' }}
                             >
-                                <Sparkles size={32} className="text-yellow-400 absolute inset-0 m-auto" />
+                                <img src="/logo.jpg" alt="AI Agent" className="w-full h-full object-cover" />
                             </motion.div>
 
                             <h3 className="font-medium text-white mb-2">Auto-Furnishing...</h3>

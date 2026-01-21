@@ -611,7 +611,7 @@ function ViewportMode({ onClose }) {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[100] bg-white flex flex-col">
             <div className="flex-shrink-0 flex items-center justify-between px-10 py-6 border-b border-gray-100 bg-white/80 backdrop-blur-md">
                 <div className="flex items-center gap-6">
-                    <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.12),inset_0_-2px_4px_rgba(0,0,0,0.1)] border border-white/20">
                         <img
                             src="/logo.jpg"
                             alt="Logo"
@@ -855,8 +855,8 @@ export default function MainWorkspace() {
                 <div className="flex items-center gap-6">
                     <button onClick={toggleLeftSidebar} className="p-4 rounded-full hover:bg-black/5 transition-colors text-gray-600"><Menu size={28} /></button>
                     <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-[14px] bg-gradient-to-br from-[#1a73e8] to-[#a142f4] flex items-center justify-center shadow-lg shadow-blue-100">
-                            <Sparkles className="text-white" size={24} />
+                        <div className="w-12 h-12 rounded-[14px] overflow-hidden border border-white/20 shadow-[0_12px_24px_rgba(26,115,232,0.15),inset_0_-2px_4px_rgba(0,0,0,0.1)] transition-all hover:scale-105 active:scale-95 cursor-pointer">
+                            <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
                         </div>
                         <h1 className="text-3xl font-bold text-gray-800 tracking-tight">Design & Build</h1>
                     </div>

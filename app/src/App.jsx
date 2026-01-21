@@ -79,7 +79,7 @@ function SplashScreen({ onComplete }) {
               animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
               transition={{ duration: 3, repeat: Infinity }}
             />
-            <div className="w-32 h-32 rounded-3xl overflow-hidden border-2 border-cyan-500/30 shadow-2xl shadow-cyan-500/20 relative z-10">
+            <div className="w-32 h-32 rounded-3xl overflow-hidden border-2 border-cyan-500/30 shadow-[0_20px_50px_rgba(0,0,0,0.3),inset_0_-4px_8px_rgba(0,0,0,0.2)] relative z-10">
               <img
                 src="/logo.jpg"
                 alt="Design & Build Logo"

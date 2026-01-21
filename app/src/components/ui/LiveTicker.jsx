@@ -137,7 +137,9 @@ export default function LiveTicker() {
 
             {/* Center Section - Logo/Brand */}
             <div className="hidden md:flex items-center gap-2">
-                <Building2 size={20} className="text-blue-400" />
+                <div className="w-8 h-8 rounded-lg overflow-hidden border border-white/20 shadow-[0_4px_12px_rgba(0,0,0,0.2),inset_0_-1px_2px_rgba(0,0,0,0.1)]">
+                    <img src="/logo.jpg" alt="Logo" className="w-full h-full object-cover" />
+                </div>
                 <div className="flex flex-col">
                     <span className="text-xs font-semibold text-white">Design & Build</span>
                     <span className="text-[10px] text-gray-500">Real-Time Estimator</span>

@@ -126,7 +126,7 @@ export default function CostTicker() {
                 <div className="flex items-center gap-5">
                     <div className="flex items-center gap-3">
                         <div className="relative">
-                            <div className="w-10 h-10 rounded-xl overflow-hidden border border-[var(--border-main)] shadow-lg shadow-blue-500/10 transition-all hover:scale-105 active:scale-95 cursor-pointer">
+                            <div className="w-10 h-10 rounded-xl overflow-hidden border border-white/20 shadow-[0_8px_20px_rgba(0,0,0,0.15),inset_0_-2px_4px_rgba(0,0,0,0.1)] transition-all hover:scale-105 active:scale-95 cursor-pointer">
                                 <img
                                     src="/logo.jpg"
                                     alt="Logo"
