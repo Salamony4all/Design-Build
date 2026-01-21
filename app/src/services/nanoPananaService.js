@@ -16,7 +16,7 @@
 const NANO_PANANA_CONFIG = {
     apiKey: import.meta.env.VITE_NANO_PANANA_API_KEY || '',
     model: 'gemini-2.0-flash',
-    imageEditModel: 'gemini-2.0-flash', // Optimization: Using Flash for analysis tasks
+    imageEditModel: 'gemini-2.5-flash-image', // Reverting to specialized image generator
     baseUrl: 'https://generativelanguage.googleapis.com/v1beta',
 };
 

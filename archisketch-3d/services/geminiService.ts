@@ -122,7 +122,7 @@ export const editLayoutImage = async (imageB64: string, mimeType: string, prompt
   return withRetry(async () => {
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const response = await ai.models.generateContent({
-      model: 'gemini-2.0-flash',
+      model: 'gemini-2.5-flash-image',
       contents: {
         parts: [
           { inlineData: { data: imageB64, mimeType: mimeType } },
