@@ -51,6 +51,14 @@ const sanitize = (val) => {
         .trim();
 };
 
+/**
+ * Helper to validate if a string is a valid base64 image data URL
+ */
+const isValidBase64Image = (data) => {
+    if (!data || typeof data !== 'string') return false;
+    return data.startsWith('data:image/');
+};
+
 // ============================================================================
 // Generate Complete 10-Slide PPTX
 // ============================================================================
@@ -404,11 +412,6 @@ export async function generateCompletePPTX() {
         color: BRAND_COLORS.text,
     });
 
-    // Helper to validate base64 image data
-    const isValidBase64Image = (data) => {
-        if (!data || typeof data !== 'string') return false;
-        return data.startsWith('data:image/');
-    };
 
     // SLIDE 5: Floor Plan Layout
     // ============================================================================
