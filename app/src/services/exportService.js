@@ -935,11 +935,6 @@ export async function exportMoodboardPDF() {
         fontSize: 32, color: BRAND_COLORS.primary, bold: true, fontFace: FONTS.primary
     });
 
-    // Helper to validate base64 image data
-    const isValidBase64Image = (data) => {
-        if (!data || typeof data !== 'string') return false;
-        return data.startsWith('data:image/');
-    };
 
     const mainRenderImage = renders.length > 0 ? renders[0].image : null;
     if (mainRenderImage && isValidBase64Image(mainRenderImage)) {
