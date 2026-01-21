@@ -142,11 +142,10 @@ function safeJsonParse(text, fallback = null) {
             }
             throw innerErr;
         }
-    }
     } catch (repairErr) {
-    console.error('[Nano Panana Pro] JSON repair pipeline failed:', repairErr.message);
-    return fallback;
-}
+        console.error('[Nano Panana Pro] JSON repair pipeline failed:', repairErr.message);
+        return fallback;
+    }
 }
 
 /**
