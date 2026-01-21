@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Design & Build | BIM Design Platform</title>
+    <meta name="title" content="Design & Build | BIM Design Platform" />
+    <meta name="description" content="End-to-end platform that converts 2D sketches/PDFs into 3D environments with real-time lighting, AI enhancement, automated BOQ takeoff, and Solar/Cost analytics." />
+    <meta name="keywords" content="BIM, Architecture, 3D Design, AI, Floor Plan, BOQ, Quantity Takeoff, Interior Design, Visualization" />
+    <meta name="author" content="Design & Build" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aiarchitect.studio/" />
+    <meta property="og:title" content="Design & Build | BIM Design Platform" />
+    <meta property="og:description" content="Convert 2D sketches into photorealistic 3D environments with AI-powered design automation." />
+    <meta property="og:image" content="/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://aiarchitect.studio/" />
+    <meta property="twitter:title" content="Design & Build" />
+    <meta property="twitter:description" content="AI-powered architectural design platform with real-time 3D visualization and BOQ automation." />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#06B6D4" />
+    <meta name="msapplication-TileColor" content="#0F172A" />
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Design & Build" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/boq_library.json" as="fetch" crossorigin />
+    
+    <style>
+        /* Critical CSS for loading state */
+        html, body, #root {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #020617 0%, #0F172A 50%, #020617 100%);
+            color: #E2E8F0;
+        }
+        
+        /* Removed initial loader styles */
+
+    </style>
+</head>
+<body>
+    <div id="root">
+        <!-- Initial loader shown while React loads -->
+        <!-- React takes over splash screen duty -->
+
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+
+</body>
+</html>

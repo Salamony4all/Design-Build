@@ -1,0 +1,7 @@
+{
+  "name": "ArchiSketch 3D",
+  "description": "Transform 2D layout plans, sketches, or PDFs into interactive 3D models using Nano Banana Pro. Customize lighting, camera views, and edit layouts with AI-powered image prompts.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

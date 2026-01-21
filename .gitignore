@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.local
+
+# Project Specific
+BOQ_*.pdf
+*_extracted.txt
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.sw?

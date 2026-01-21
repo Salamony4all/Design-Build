@@ -1,0 +1,279 @@
+"""
+Final BOQ Parser - Creates production-ready JSON library
+for Design & Build Application
+"""
+
+import json
+import re
+
+# ============================================================================
+# FURNITURE BOQ ITEMS (from BOQ_Furniture.pdf)
+# ============================================================================
+
+furniture_items = [
+    # Office Desks
+    {"code": "LF01", "name": "Height Adjustable Office Desk", "description": "Single Electrical operating height adjustable office desk with hanging CPU holder", "category": "Desks", "unit": "No.", "rate": 170.000, "quantity": 78},
+    {"code": "LF02", "name": "L-Shaped Executive Desk", "description": "Electrical operating height adjustable L-shaped executive office desk with wooden top and metal base with integrated CPU holder and modesty panel", "category": "Desks", "unit": "No.", "rate": 190.000, "quantity": 1},
+    {"code": "LF21", "name": "Executive Desk Rectangular", "description": "Electrical operating height adjustable rectangular shaped executive office desk with wooden top and metal base with integrated CPU holder with drawer", "category": "Desks", "unit": "No.", "rate": 450.000, "quantity": 5},
+    {"code": "LF21A", "name": "Smart L-Shaped Executive Desk", "description": "Electrical operating height adjustable L-shaped executive office desk with wooden top, metal base, CPU holder, modesty panel, WIFI charger, and luxafor flag LED busy light", "category": "Desks", "unit": "No.", "rate": 250.000, "quantity": 1},
+    {"code": "LF24A", "name": "Smart Standing Desk", "description": "Electrical operating height adjustable rectangular executive tall desk with wooden top, metal base, CPU holder, modesty panel, WIFI charger, and luxafor LED busy light", "category": "Desks", "unit": "No.", "rate": 190.000, "quantity": 4},
+    {"code": "LF27A", "name": "Premium Partition Workstation", "description": "Floor mounted wooden state partition with bean shaped office desk, height adjustable tall desk with WIFI charger and luxafor flag LED busy light", "category": "Desks", "unit": "No.", "rate": 2500.000, "quantity": 2},
+    
+    # Chairs - Office
+    {"code": "LF03", "name": "Arm Chair with Swivel Table", "description": "Arm chair with attached swiveling table", "category": "Chairs", "unit": "No.", "rate": 60.000, "quantity": 38},
+    {"code": "LF03A", "name": "Arm Chair with Swivel Table (Alt)", "description": "Arm chair with attached swiveling table", "category": "Chairs", "unit": "No.", "rate": 60.000, "quantity": 6},
+    {"code": "LF07", "name": "Office Task Chair", "description": "Swivel and height adjustable office chair with fabric upholstery and powder coated matte black base", "category": "Chairs", "unit": "No.", "rate": 35.000, "quantity": 85},
+    {"code": "LF08", "name": "Executive High Back Chair (Leather)", "description": "Swivel and height adjustable high back executive office chair with leather upholstery and powder coated matte black base", "category": "Chairs", "unit": "No.", "rate": 85.000, "quantity": 1},
+    {"code": "LF09", "name": "Guest Chair", "description": "Guest chair with leather upholstery and wooden base", "category": "Chairs", "unit": "No.", "rate": 55.000, "quantity": 8},
+    {"code": "LF14", "name": "Armchair Metal Frame", "description": "Armchair with metal frame and fabric upholstery", "category": "Chairs", "unit": "No.", "rate": 95.000, "quantity": 16},
+    {"code": "LF18", "name": "High Back Curved Armchair", "description": "Armchair with high back with curved configuration, removable back rest for flexibility", "category": "Chairs", "unit": "No.", "rate": 80.000, "quantity": 5},
+    {"code": "LF19", "name": "Meeting Room Chair (Casters)", "description": "Meeting room chair with casters", "category": "Chairs", "unit": "No.", "rate": 65.000, "quantity": 13},
+    {"code": "LF22", "name": "Executive High Back Chair", "description": "Swivel and height adjustable high back executive office chair with leather upholstery and powder coated matte black base", "category": "Chairs", "unit": "No.", "rate": 85.000, "quantity": 1},
+    {"code": "LF23", "name": "Guest Chair Leather", "description": "Guest chair with leather upholstery and wooden base", "category": "Chairs", "unit": "No.", "rate": 55.000, "quantity": 5},
+    {"code": "LF23A", "name": "Executive Chair Leather", "description": "Swivel and height adjustable high back executive office chair with leather upholstery and powder coated matte black base", "category": "Chairs", "unit": "No.", "rate": 85.000, "quantity": 1},
+    {"code": "LF20A", "name": "Standard Chair", "description": "Chair", "category": "Chairs", "unit": "No.", "rate": 35.000, "quantity": 5},
+    {"code": "LF26", "name": "Meeting Chair with Casters", "description": "Meeting room chair with casters", "category": "Chairs", "unit": "No.", "rate": 65.000, "quantity": 11},
+    {"code": "LF30", "name": "Conference Chair", "description": "Meeting room chair with casters", "category": "Chairs", "unit": "No.", "rate": 65.000, "quantity": 9},
+    {"code": "LF37", "name": "Egg Shell Chair", "description": "Chair with wooden legs and plastic shell (Egg Shell)", "category": "Chairs", "unit": "No.", "rate": 39.000, "quantity": 16},
+    {"code": "LF39", "name": "High Bar Chair", "description": "High bar chairs with metal legs, plastic shell and fabric padding", "category": "Chairs", "unit": "No.", "rate": 35.000, "quantity": 3},
+    {"code": "LF40", "name": "Design Chair Egg Shell", "description": "Chair with wooden legs and plastic shell (Egg Shell)", "category": "Chairs", "unit": "No.", "rate": 39.000, "quantity": 5},
+    {"code": "LF42", "name": "Fabric Upholstery Chair", "description": "Chair with wooden legs and fabric upholstery", "category": "Chairs", "unit": "No.", "rate": 40.000, "quantity": 5},
+    {"code": "LF53", "name": "Foldable Chair", "description": "Foldable chair with castors", "category": "Chairs", "unit": "No.", "rate": 45.000, "quantity": 36},
+    
+    # Tables
+    {"code": "LF15", "name": "Round Coffee Table Set", "description": "Round Coffee table set (810x340)", "category": "Tables", "unit": "No.", "rate": 50.000, "quantity": 2},
+    {"code": "LF16", "name": "Reception Table", "description": "Rectangular reception table with two level and stone finish with integrated lighting and wire manager", "category": "Tables", "unit": "No.", "rate": 1600.000, "quantity": 1},
+    {"code": "LF20", "name": "U-Shaped Board Meeting Table", "description": "U shaped board meeting table with white oak wood top and black metal with elegant 45-degree joint bridge and integrated hidden cable management with motorized rotating pop up PDU unit", "category": "Tables", "unit": "No.", "rate": 2800.000, "quantity": 1},
+    {"code": "LF24", "name": "Square Coffee Table", "description": "Square Coffee table", "category": "Tables", "unit": "No.", "rate": 45.000, "quantity": 3},
+    {"code": "LF29", "name": "Square Coffee Table (Alt)", "description": "Square coffee table", "category": "Tables", "unit": "No.", "rate": 65.000, "quantity": 2},
+    {"code": "LF29A", "name": "Pantry Table", "description": "Pantry table", "category": "Tables", "unit": "No.", "rate": 1250.000, "quantity": 2},
+    {"code": "LF31", "name": "Rectangular Writing Table", "description": "Rectangular shape table with wood top and metal base and grey writing pad on top with integrated wire manager", "category": "Tables", "unit": "No.", "rate": 280.000, "quantity": 1},
+    {"code": "LF32", "name": "L-Shaped Reception Desk", "description": "L-shaped reception desk with integrated wire manager and designated area for storage and CPU", "category": "Tables", "unit": "No.", "rate": 1500.000, "quantity": 1},
+    {"code": "LF36", "name": "Square Table Wood", "description": "Square shape table with wood top and metal base", "category": "Tables", "unit": "No.", "rate": 55.000, "quantity": 4},
+    {"code": "LF52", "name": "Foldable Table", "description": "Foldable table", "category": "Tables", "unit": "No.", "rate": 150.000, "quantity": 36},
+    {"code": "LF55", "name": "Coffee Table Premium", "description": "Coffee table", "category": "Tables", "unit": "No.", "rate": 640.000, "quantity": 1},
+    
+    # Sofas
+    {"code": "LF27", "name": "3-Seater Sofa", "description": "3 seater sofa fabric upholstery and metal base", "category": "Sofas", "unit": "No.", "rate": 150.000, "quantity": 5},
+    {"code": "LF59", "name": "4-Seater Sofa with Partition", "description": "4-seater sofa fabric upholstery, decorative partition and metal base", "category": "Sofas", "unit": "No.", "rate": 1500.000, "quantity": 1},
+    {"code": "LF41", "name": "Wall Mounted Booth Seating", "description": "Wall mounted booth seating with integrated planter boxes with cushions and artificial plants and pebbles", "category": "Sofas", "unit": "No.", "rate": 2500.000, "quantity": 1},
+    
+    # Storage
+    {"code": "LF06", "name": "Storage Unit with Plants", "description": "Storage unit with a combination of open and closed cabinets and integrated with natural touch plants", "category": "Storage", "unit": "No.", "rate": 1200.000, "quantity": 5},
+    {"code": "LF06A", "name": "Storage Unit Planter Top", "description": "Storage unit with artificial plant planter box on top and white pebble filled", "category": "Storage", "unit": "No.", "rate": 290.000, "quantity": 15},
+    {"code": "LF06B", "name": "Storage Unit Oak Wood", "description": "Storage unit wooden slate doors and solid oak wood top", "category": "Storage", "unit": "No.", "rate": 350.000, "quantity": 2},
+    {"code": "LF11", "name": "Storage Unit Standard", "description": "Storage unit", "category": "Storage", "unit": "No.", "rate": 275.000, "quantity": 5},
+    {"code": "LF54", "name": "Mobile Storage Rack", "description": "Mobile storage rack", "category": "Storage", "unit": "No.", "rate": 110.000, "quantity": 240},
+    {"code": "LF56", "name": "Shoe Rack", "description": "Shoe rack", "category": "Storage", "unit": "No.", "rate": 200.000, "quantity": 2},
+    {"code": "LF57", "name": "Storage Rack", "description": "Storage rack", "category": "Storage", "unit": "No.", "rate": 120.000, "quantity": 10},
+    
+    # Decor
+    {"code": "LF04", "name": "Round Ottoman", "description": "Round ottoman a combination of leather and fabric upholstery", "category": "Decor", "unit": "No.", "rate": 25.000, "quantity": 21},
+    {"code": "LF05", "name": "Planter Box", "description": "Planter box with live plants and pebble filled", "category": "Decor", "unit": "No.", "rate": 20.000, "quantity": 15},
+    {"code": "LF51", "name": "Bench", "description": "Bench", "category": "Decor", "unit": "No.", "rate": 280.000, "quantity": 2},
+    {"code": "LF61", "name": "Metal State Signs", "description": "PVD coated metal states with numbering", "category": "Decor", "unit": "No.", "rate": 527.000, "quantity": 5},
+    {"code": "LF43", "name": "Serving Counter", "description": "Serving counter with tile base and wooden top", "category": "Decor", "unit": "No.", "rate": 2800.000, "quantity": 1},
+    
+    # Equipment
+    {"code": "EQ-01", "name": "Induction Plank", "description": "Induction plank with two numbers of induction elements", "category": "Equipment", "unit": "No.", "rate": 300.000, "quantity": 4},
+    {"code": "EQ-02", "name": "Built-in Microwave", "description": "Built in microwave", "category": "Equipment", "unit": "No.", "rate": 510.000, "quantity": 5},
+    {"code": "EQ-03", "name": "Fridge Freezer", "description": "Free standing built and concealed in fridge and freezer with freezer at the bottom, glass doors", "category": "Equipment", "unit": "No.", "rate": 705.000, "quantity": 4},
+    {"code": "EQ-05", "name": "85\" Smart TV", "description": "Wall mounted TV set-size 85 inch includes Chromecast dongle", "category": "Equipment", "unit": "No.", "rate": 1200.000, "quantity": 13},
+    {"code": "EQ-06", "name": "75\" Smart TV", "description": "Wall mounted TV set-size 75 inch includes Chromecast dongle", "category": "Equipment", "unit": "No.", "rate": 900.000, "quantity": 2},
+    {"code": "EQ-07", "name": "65\" Smart TV", "description": "Wall mounted TV set-size 65 inch includes Chromecast dongle", "category": "Equipment", "unit": "No.", "rate": 600.000, "quantity": 2},
+    {"code": "VW-01", "name": "Video Wall Display 85\"", "description": "Video wall Display 85 inch (commercial) for Feature wall", "category": "Equipment", "unit": "No.", "rate": 3600.000, "quantity": 1},
+    
+    # Special Features
+    {"code": "HSE-01", "name": "HSE Corner", "description": "Design, supply and install of HSE corner as per specification", "category": "Special", "unit": "No.", "rate": 850.000, "quantity": 2},
+    {"code": "FW-01", "name": "Moss Feature Wall", "description": "Feature wall including natural moss wall with metal frame as per approved design pattern with powder coated finish. Size 3400 X 3200 mm H", "category": "Special", "unit": "No.", "rate": 2400.000, "quantity": 1},
+]
+
+# ============================================================================
+# FITOUT BOQ ITEMS (from BOQ_FitOut.pdf)
+# ============================================================================
+
+fitout_items = [
+    # Wall Finishes - Stone/Marble
+    {"code": "MA-201", "name": "Marble Wall Cladding", "description": "Mechanically fixed marble, 20mm thick stone as per approved sample", "category": "Wall Finishes", "subcategory": "Stone", "unit": "m2", "rate": 26.000},
+    {"code": "MA-202", "name": "Marble Wall Cladding (Alt)", "description": "Mechanically fixed marble, 20mm thick stone as per approved sample", "category": "Wall Finishes", "subcategory": "Stone", "unit": "m2", "rate": 26.000},
+    
+    # Wall Finishes - Glass
+    {"code": "GL-101", "name": "Clear Glass with Signage", "description": "12 mm thick toughened clear glass with vinyl sticker signage", "category": "Wall Finishes", "subcategory": "Glass", "unit": "m2", "rate": 55.000},
+    {"code": "GL-102", "name": "Rippled Glass", "description": "12 mm thick toughened clear rippled glass", "category": "Wall Finishes", "subcategory": "Glass", "unit": "m2", "rate": 110.000},
+    
+    # Wall Finishes - Wood
+    {"code": "WD-101", "name": "Natural Wood Veneer Panel", "description": "Natural wood veneer cladded MDF panel", "category": "Wall Finishes", "subcategory": "Wood", "unit": "m2", "rate": 65.000},
+    {"code": "WD-102", "name": "Fluted Wood Panel", "description": "Prefabricated wooded fluted panel", "category": "Wall Finishes", "subcategory": "Wood", "unit": "m2", "rate": 85.000},
+    {"code": "WS-101", "name": "Wood Slats Ceiling", "description": "White oak veneered Wood Slats suspended from ceiling. Open ceiling above to be painted", "category": "Ceiling", "subcategory": "Wood", "unit": "m2", "rate": 35.000},
+    
+    # Wall Finishes - Fabric
+    {"code": "FB-101", "name": "Fabric Upholstery Panel", "description": "Fabric upholstery wrapped around shelve integrated in the metal feature wall with white board and artificial plant with natural touch", "category": "Wall Finishes", "subcategory": "Fabric", "unit": "m2", "rate": 65.000},
+    {"code": "LF-50", "name": "Fabric Feature Wall", "description": "Fabric upholstery wrapped around shelve integrated in the metal feature wall with white board and artificial plant with natural touch", "category": "Wall Finishes", "subcategory": "Fabric", "unit": "m2", "rate": 40.000},
+    
+    # Wall Finishes - Paint
+    {"code": "PT-202", "name": "Textured Paint Suede", "description": "Textured paint matt finish brushed suede effect Low VOC emulation paint", "category": "Wall Finishes", "subcategory": "Paint", "unit": "m2", "rate": 8.000},
+    {"code": "PT-103", "name": "Textured Paint Matt", "description": "Textured paint matt finish brushed suede effect Low VOC emulation paint", "category": "Wall Finishes", "subcategory": "Paint", "unit": "m2", "rate": 8.000},
+    
+    # Wall Finishes - Metal
+    {"code": "MT-101", "name": "PVD Stainless Steel", "description": "Black color PVD coated stainless steel", "category": "Wall Finishes", "subcategory": "Metal", "unit": "m", "rate": 20.000},
+    
+    # Wall Finishes - Wallpaper
+    {"code": "WP-101", "name": "Textured Wallpaper", "description": "Non-woven vinyl backed textured wallpaper cladded over MDF", "category": "Wall Finishes", "subcategory": "Wallpaper", "unit": "m2", "rate": 35.000},
+    
+    # Wall Finishes - Whiteboard
+    {"code": "WB-101", "name": "Whiteboard Feature Wall", "description": "White board integrated in the metal feature wall and artificial plant with natural touch", "category": "Wall Finishes", "subcategory": "Whiteboard", "unit": "m2", "rate": 70.000},
+    
+    # Floor Finishes - Carpet
+    {"code": "CA-101", "name": "Custom Carpet Tile", "description": "9mm Thick custom design carpet tile", "category": "Floor Finishes", "subcategory": "Carpet", "unit": "m2", "rate": 19.000},
+    {"code": "CA-102", "name": "Custom Carpet Tile (Alt)", "description": "9mm Thick custom design carpet tile", "category": "Floor Finishes", "subcategory": "Carpet", "unit": "m2", "rate": 19.000},
+    {"code": "CA-103", "name": "Round Carpet Tile", "description": "9mm Thick custom design carpet tile, 3000 mm dia", "category": "Floor Finishes", "subcategory": "Carpet", "unit": "m2", "rate": 19.000},
+    {"code": "CA-104", "name": "Wall-to-Wall Carpet", "description": "9mm Thick custom design wall to wall tile with underlay", "category": "Floor Finishes", "subcategory": "Carpet", "unit": "m2", "rate": 19.000},
+    
+    # Floor Finishes - Tiles
+    {"code": "VT-201", "name": "Vitrified Porcelain Tiles", "description": "Fully vitrified porcelain tiles 10mm thick with epoxy grout to match tile color for back splash", "category": "Floor Finishes", "subcategory": "Tiles", "unit": "m2", "rate": 26.000},
+    
+    # Skirting
+    {"code": "SK-101", "name": "Solid Wood Skirting", "description": "18 thickness, 100 mm high solid wood skirting HDPE wood skirting", "category": "Skirting", "subcategory": "Wood", "unit": "m", "rate": 12.000},
+    
+    # Ceiling - Acoustic
+    {"code": "AP-101", "name": "Acoustic Panel Type 1", "description": "Prefabricated acoustic panel with custom design, fully enclosed with excellent quality fabrics. Eliminates disturbing noise reflections, improves interior acoustics", "category": "Ceiling", "subcategory": "Acoustic", "unit": "m2", "rate": 90.000},
+    {"code": "AP-102", "name": "Acoustic Panel Type 2", "description": "Prefabricated acoustic panel with custom design, fully enclosed with excellent quality fabrics. Eliminates disturbing noise reflections, improves interior acoustics", "category": "Ceiling", "subcategory": "Acoustic", "unit": "m2", "rate": 90.000},
+    {"code": "AP-103", "name": "Acoustic Panel Type 3", "description": "Prefabricated acoustic panel with custom design, fully enclosed with excellent quality fabrics. Eliminates disturbing noise reflections, improves interior acoustics", "category": "Ceiling", "subcategory": "Acoustic", "unit": "m2", "rate": 90.000},
+    
+    # Laminate
+    {"code": "LA-101", "name": "Matte Brushed Laminate", "description": "Laminate with matte brushed finish", "category": "Wall Finishes", "subcategory": "Laminate", "unit": "m2", "rate": 85.000},
+    {"code": "LA-102", "name": "Matte Brushed Laminate (Alt)", "description": "Laminate with matte brushed finish", "category": "Wall Finishes", "subcategory": "Laminate", "unit": "m2", "rate": 85.000},
+    {"code": "LA-201", "name": "Base Cabinet Laminate", "description": "Laminate with matte brushed finish base cabinet along with korean countertop", "category": "Cabinetry", "subcategory": "Laminate", "unit": "m", "rate": 140.000},
+    {"code": "LA-202", "name": "Laminate Shelf", "description": "Laminate with matte brushed shelf", "category": "Wall Finishes", "subcategory": "Laminate", "unit": "m2", "rate": 90.000},
+    
+    # Mirrors
+    {"code": "MR-101", "name": "Vanity Mirror", "description": "Silver mirror 6mm thick with dark grey lighting vanity mirror low iron with lighting, overall size 400x1200 mm", "category": "Accessories", "subcategory": "Mirrors", "unit": "No.", "rate": 75.000},
+    
+    # Window Treatments
+    {"code": "CR-2600", "name": "Window Curtain 2600mm", "description": "Horizontal window curtain for window size 2600x2800 mm", "category": "Window Treatment", "subcategory": "Curtains", "unit": "No.", "rate": 85.000},
+    {"code": "CR-6000", "name": "Window Curtain 6000mm", "description": "Horizontal window curtain for window size 6000x2800 mm", "category": "Window Treatment", "subcategory": "Curtains", "unit": "No.", "rate": 195.000},
+    {"code": "CR-6200", "name": "Window Curtain 6200mm", "description": "Horizontal window curtain for window size 6200x2800 mm", "category": "Window Treatment", "subcategory": "Curtains", "unit": "No.", "rate": 201.000},
+    
+    # Art
+    {"code": "ART-S", "name": "Artwork Small", "description": "Art work (overall size 600x1000 mm)", "category": "Accessories", "subcategory": "Art", "unit": "No.", "rate": 65.000},
+    {"code": "ART-M", "name": "Artwork Medium", "description": "Art work (overall size 1000x1500 mm)", "category": "Accessories", "subcategory": "Art", "unit": "No.", "rate": 115.000},
+    {"code": "ART-L", "name": "Artwork Large", "description": "Art work (overall size 1200x1500 mm)", "category": "Accessories", "subcategory": "Art", "unit": "No.", "rate": 130.000},
+    {"code": "ART-XL", "name": "Artwork Extra Large", "description": "Art work (overall size 1800x2200 mm)", "category": "Accessories", "subcategory": "Art", "unit": "No.", "rate": 260.000},
+    {"code": "ART-XXL", "name": "Artwork Feature", "description": "Art work (overall size 1900x2000 mm)", "category": "Accessories", "subcategory": "Art", "unit": "No.", "rate": 210.000},
+    
+    # Special
+    {"code": "LOGO-01", "name": "Metal Logo Backlit", "description": "Metal logo with back-lighting Brushed brass finish", "category": "Special", "subcategory": "Signage", "unit": "No.", "rate": 450.000},
+    {"code": "DOOR-01", "name": "Composite Sliding Door", "description": "Sliding door with GL-101, GL-102, MT-101, FB-101 as composite unit, overall size 3400x3300 mm", "category": "Doors", "subcategory": "Sliding", "unit": "No.", "rate": 400.000},
+    {"code": "GP-01", "name": "Decorative Glass Partition", "description": "10 mm thick frosted toughened glass decorative partition", "category": "Partitions", "subcategory": "Glass", "unit": "m2", "rate": 45.000},
+]
+
+# ============================================================================
+# SPATIAL ZONES (for 3D visualization)
+# ============================================================================
+
+spatial_zones = [
+    {"id": "zone-1", "name": "Main Entrance", "floor": "Ground Floor", "type": "Entrance", "color": "#4A90A4"},
+    {"id": "zone-2", "name": "Reception Area", "floor": "Ground Floor", "type": "Reception", "color": "#7B68EE"},
+    {"id": "zone-3", "name": "Urban Planning Department", "floor": "Ground Floor", "type": "Office", "color": "#2ECC71"},
+    {"id": "zone-4", "name": "Land Department", "floor": "Ground Floor", "type": "Office", "color": "#3498DB"},
+    {"id": "zone-5", "name": "Meeting Room", "floor": "Ground Floor", "type": "Meeting", "color": "#E74C3C"},
+    {"id": "zone-6", "name": "Real Estate Registry Department", "floor": "Ground Floor", "type": "Office", "color": "#9B59B6"},
+    {"id": "zone-7", "name": "Driver's Room", "floor": "Ground Floor", "type": "Support", "color": "#95A5A6"},
+    {"id": "zone-8", "name": "Open Café/Pantry", "floor": "Ground Floor", "type": "Amenity", "color": "#F39C12"},
+    {"id": "zone-9", "name": "Customer Service", "floor": "Ground Floor", "type": "Service", "color": "#1ABC9C"},
+    {"id": "zone-10", "name": "Kiosk/Waiting Area", "floor": "Ground Floor", "type": "Waiting", "color": "#34495E"},
+    {"id": "zone-11", "name": "Manager Office", "floor": "Ground Floor", "type": "Executive", "color": "#8E44AD"},
+    {"id": "zone-12", "name": "VIP Lounge", "floor": "Ground Floor", "type": "VIP", "color": "#C0392B"},
+    {"id": "zone-13", "name": "Boardroom", "floor": "Ground Floor", "type": "Meeting", "color": "#D35400"},
+    {"id": "zone-14", "name": "Archive Room", "floor": "First Floor", "type": "Storage", "color": "#7F8C8D"},
+    {"id": "zone-15", "name": "Proof and Registration Department", "floor": "First Floor", "type": "Office", "color": "#27AE60"},
+    {"id": "zone-16", "name": "Social Housing Department", "floor": "First Floor", "type": "Office", "color": "#2980B9"},
+]
+
+# ============================================================================
+# MATERIAL TEXTURES (for 3D rendering)
+# ============================================================================
+
+material_textures = {
+    "marble": {
+        "MA-201": {"name": "White Marble", "color": "#F5F5F5", "roughness": 0.1, "metalness": 0.0},
+        "MA-202": {"name": "Grey Marble", "color": "#C0C0C0", "roughness": 0.15, "metalness": 0.0},
+    },
+    "wood": {
+        "WD-101": {"name": "Natural Oak Veneer", "color": "#D4A574", "roughness": 0.4, "metalness": 0.0},
+        "WD-102": {"name": "Fluted Oak Panel", "color": "#C4956A", "roughness": 0.5, "metalness": 0.0},
+        "WS-101": {"name": "White Oak Slats", "color": "#E8D5B7", "roughness": 0.45, "metalness": 0.0},
+    },
+    "glass": {
+        "GL-101": {"name": "Clear Glass", "color": "#E8F4F8", "roughness": 0.0, "metalness": 0.0, "opacity": 0.3},
+        "GL-102": {"name": "Rippled Glass", "color": "#D4E8ED", "roughness": 0.2, "metalness": 0.0, "opacity": 0.4},
+    },
+    "metal": {
+        "MT-101": {"name": "Black PVD Steel", "color": "#1A1A1A", "roughness": 0.2, "metalness": 0.9},
+    },
+    "fabric": {
+        "FB-101": {"name": "Premium Fabric", "color": "#4A5568", "roughness": 0.8, "metalness": 0.0},
+        "LF-50": {"name": "Feature Fabric", "color": "#718096", "roughness": 0.75, "metalness": 0.0},
+    },
+    "carpet": {
+        "CA-101": {"name": "Custom Carpet Primary", "color": "#2D3748", "roughness": 0.9, "metalness": 0.0},
+        "CA-102": {"name": "Custom Carpet Secondary", "color": "#4A5568", "roughness": 0.9, "metalness": 0.0},
+        "CA-103": {"name": "Custom Carpet Accent", "color": "#718096", "roughness": 0.85, "metalness": 0.0},
+    },
+    "acoustic": {
+        "AP-101": {"name": "Acoustic Panel Grey", "color": "#718096", "roughness": 0.95, "metalness": 0.0},
+        "AP-102": {"name": "Acoustic Panel White", "color": "#E2E8F0", "roughness": 0.95, "metalness": 0.0},
+        "AP-103": {"name": "Acoustic Panel Cream", "color": "#FAF5EB", "roughness": 0.92, "metalness": 0.0},
+    }
+}
+
+# ============================================================================
+# BUILD FINAL LIBRARY
+# ============================================================================
+
+def build_library():
+    """Build the complete BOQ library"""
+    
+    # Calculate totals for furniture
+    furniture_total = sum(item['rate'] * item.get('quantity', 1) for item in furniture_items)
+    
+    library = {
+        "metadata": {
+            "version": "1.0.0",
+            "extracted_date": "2026-01-15",
+            "currency": "OMR",
+            "currency_symbol": "OMR",
+            "vat_rate": 0.05,
+            "source": "Carbon Engineering BOQ Standards",
+            "project": "Design & Build - Real Estate Registry Fit-Out",
+            "client": "Carbon Engineering",
+            "totals": {
+                "furniture_subtotal": round(furniture_total, 3),
+                "furniture_vat": round(furniture_total * 0.05, 3),
+                "furniture_total": round(furniture_total * 1.05, 3)
+            }
+        },
+        "furniture": furniture_items,
+        "fitout": fitout_items,
+        "spatial_zones": spatial_zones,
+        "material_textures": material_textures,
+        "categories": {
+            "furniture": ["Desks", "Chairs", "Tables", "Sofas", "Storage", "Decor", "Equipment", "Special"],
+            "fitout": ["Wall Finishes", "Floor Finishes", "Ceiling", "Skirting", "Cabinetry", "Window Treatment", "Accessories", "Doors", "Partitions", "Special"]
+        }
+    }
+    
+    # Save library
+    with open('boq_library.json', 'w', encoding='utf-8') as f:
+        json.dump(library, f, indent=2, ensure_ascii=False)
+    
+    print("✅ BOQ Library created successfully!")
+    print(f"   📦 Furniture Items: {len(furniture_items)}")
+    print(f"   🏗️  Fit-Out Items: {len(fitout_items)}")
+    print(f"   🗺️  Spatial Zones: {len(spatial_zones)}")
+    print(f"   💰 Furniture Total: {library['metadata']['totals']['furniture_total']:,.3f} OMR (incl. VAT)")
+    
+    return library
+
+if __name__ == '__main__':
+    build_library()

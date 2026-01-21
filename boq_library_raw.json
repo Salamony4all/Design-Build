@@ -1,0 +1,5068 @@
+{
+  "metadata": {
+    "extracted_date": "2026-01-15",
+    "currency": "OMR",
+    "vat_rate": 0.05,
+    "source": "Carbon Engineering BOQ Standards"
+  },
+  "furniture": [
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.1",
+        "Funiture and\nfiitings",
+        "Supplying and fixing Single Electrical operating height\nadjustable office desk with hanging CPU holder.",
+        "Item Code LF01",
+        "No.",
+        "78",
+        "170",
+        "13,260.000"
+      ],
+      "description": "Supplying and fixing Single Electrical operating height\nadjustable office desk with hanging CPU holder.",
+      "rate": 13260.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.2",
+        "Funiture and fiitings",
+        "Supplying and fixing Electrical operating height adjustable L-\nshaped executive office desk with wooden top and metal base\nwith integrated CPU holder and modesty\npanel.",
+        "Item Code LF2",
+        "No.",
+        "1",
+        "190",
+        "190.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 190.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.3",
+        "Funiture and\nfiitings",
+        "Supplying and fixing Arm chair with attached with\nswiveling table.",
+        "Item Code LF03",
+        "No.",
+        "38",
+        "60",
+        "2,280.000"
+      ],
+      "description": "Supplying and fixing Arm chair with attached with\nswiveling table.",
+      "rate": 2280.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.4",
+        "Funiture and\nfiitings",
+        "Supplying and fixing Arm chair with attached with\nswiveling table.",
+        "Item Code LF03A",
+        "No.",
+        "6",
+        "60",
+        "360.000"
+      ],
+      "description": "Supplying and fixing Arm chair with attached with\nswiveling table.",
+      "rate": 360.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.5",
+        "Funiture and\nfiitings",
+        "Supplying and fixing round round ottoman a combination\nof leather and fabric upholstery.",
+        "Item Code LF04",
+        "No.",
+        "21",
+        "25",
+        "525.000"
+      ],
+      "description": "Supplying and fixing round round ottoman a combination\nof leather and fabric upholstery.",
+      "rate": 525.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.6",
+        "Funiture and\nfiitings",
+        "Supplying and fixing Planter box with live plants and\npebble filled.",
+        "Item Code LF05",
+        "No.",
+        "15",
+        "20",
+        "300.000"
+      ],
+      "description": "Supplying and fixing Planter box with live plants and\npebble filled.",
+      "rate": 300.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.7",
+        "Funiture and fiitings",
+        "Supplying and fixing storage unit with a combination of open and\nclosed cabinets and integrated with natural\ntouch plants.",
+        "Item Code LF06",
+        "No.",
+        "5",
+        "1200",
+        "6,000.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 6000.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.8",
+        "Funiture and\nfiitings",
+        "Supplying and fixing storage unit with artificial plnat\nplanter box on top and white pebble filled.",
+        "Item Code LF06A",
+        "No.",
+        "15",
+        "290",
+        "4,350.000"
+      ],
+      "description": "Supplying and fixing storage unit with artificial plnat\nplanter box on top and white pebble filled.",
+      "rate": 4350.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No. 01.9",
+        "Funiture and\nfiitings",
+        "Supplying and fixing storage unit storage unit wooden\nslate doors and solid oak wood top.",
+        "Item Code LF06B",
+        "No.",
+        "2",
+        "350",
+        "700.000"
+      ],
+      "description": "Supplying and fixing storage unit storage unit wooden\nslate doors and solid oak wood top.",
+      "rate": 700.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.10",
+        "Funiture and fiitings",
+        "Supplying and fixing swivel and height adjustable office chair with\nfabric upholstery and powder coated matte\nblack base.",
+        "Item No. LF07",
+        "No.",
+        "85",
+        "35",
+        "2,975.000"
+      ],
+      "description": "Supplying and fixing swivel and height adjustable office chair with\nfabric upholstery and powder coated matte\nblack base.",
+      "rate": 2975.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.11",
+        "Funiture and fiitings",
+        "Supplying and fixing swivel and height adjustable High\nback executive office chair with leather upholstery and powder\ncoated matte black base.",
+        "Item Code LF08",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "Supplying and fixing swivel and height adjustable High\nback executive office chair with leather upholstery and powder\ncoated matte black base.",
+      "rate": 85.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.12",
+        "Funiture and\nfiitings",
+        "Supplying and fixing Guest chair with leather upholstery\nand wooden base.",
+        "Item Code LF09",
+        "No.",
+        "8",
+        "55",
+        "440.000"
+      ],
+      "description": "Supplying and fixing Guest chair with leather upholstery\nand wooden base.",
+      "rate": 440.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.13",
+        "Funiture and\nfiitings",
+        "Supplying and fixing storage unit.",
+        "Item Code LF11",
+        "No.",
+        "5",
+        "275",
+        "1,375.000"
+      ],
+      "description": "Supplying and fixing storage unit.",
+      "rate": 1375.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.14",
+        "Funiture and\nfiitings",
+        "Supplying and fixing Armchair with metal frame and fabric\nupholstery.",
+        "Item Code LF14",
+        "No",
+        "16",
+        "95",
+        "1,520.000"
+      ],
+      "description": "Supplying and fixing Armchair with metal frame and fabric\nupholstery.",
+      "rate": 1520.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.15",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Round Coffee table set.",
+        "Item Code LF15,\nsize 810x340",
+        "No.",
+        "2",
+        "50",
+        "100.000"
+      ],
+      "description": "Item Code LF15,\nsize 810x340",
+      "rate": 100.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.16",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Round Coffee table set.",
+        "Item Code LF15,\nsize 360x360",
+        "No.",
+        "2",
+        "40",
+        "80.000"
+      ],
+      "description": "Item Code LF15,\nsize 360x360",
+      "rate": 80.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.17",
+        "Funiture and fiitings",
+        "Supplying and fixing of Rectangular reception table with\ntwo level and stone finish with integrated lighting and wire\nmanager.",
+        "Item Code LF16",
+        "No.",
+        "1",
+        "1600",
+        "1,600.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 1600.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.18",
+        "Funiture and\nfiitings",
+        "Supplying and fixing armchair with high back with curved\nconfiguration, back rest shall be removable for flexibility.",
+        "Item Code LF18",
+        "No.",
+        "5",
+        "80",
+        "400.000"
+      ],
+      "description": "Supplying and fixing armchair with high back with curved\nconfiguration, back rest shall be removable for flexibility.",
+      "rate": 400.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.19",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of meeting room chair with casters.",
+        "Item Code LF19",
+        "No.",
+        "13",
+        "65",
+        "845.000"
+      ],
+      "description": "Supplying and fixing of meeting room chair with casters.",
+      "rate": 845.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.20",
+        "Funiture and fiitings",
+        "Supplying and fixing of U shaped board meeting table with white\noak wood top and black metal with elegant 45- degree joint bridge\nand integrated hidden cable management provision with minimum\n14 numbers including minimum 2 power, 1 HDMI and 2 data,\nmotorized rotating pop up PDU unit.",
+        "Item Code LF20",
+        "No.",
+        "1",
+        "2800",
+        "2,800.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 2800.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.21",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of chair.",
+        "Item Code LF20A",
+        "No.",
+        "5",
+        "35",
+        "175.000"
+      ],
+      "description": "Supplying and fixing of chair.",
+      "rate": 175.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.22",
+        "Funiture and fiitings",
+        "Supplying and fixing of Electrical operating height adjustable\nrectangular shaped executive office desk with wooden top and\nmetal base with integrated CPU holder\nwith drawer.",
+        "Item Code LF21",
+        "No.",
+        "5",
+        "450",
+        "2,250.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 2250.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.23",
+        "Funiture and fiitings",
+        "Supplying and fixing of Electrical operating height adjustable L-\nshaped executive office desk with wooden top and metal base\nwith integrated CPU holder and modesty panel. Including WIFI\ncharger. Integrated with luxafor flag LED busy light that eliminates\nworkspace distractions with all software and accessories related\nto it. Flag to be powered by USB powered with a standard\nmicro USB data cable.",
+        "Item Code LF21A",
+        "No.",
+        "1",
+        "250",
+        "250.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 250.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.24",
+        "Funiture and fiitings",
+        "Supplying and fixing swivel and height adjustable High back\nexecutive office chair with leather upholstery and\npowder coated matte black base.",
+        "Item Code LF22",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "Supplying and fixing swivel and height adjustable High back\nexecutive office chair with leather upholstery and\npowder coated matte black base.",
+      "rate": 85.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.25",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Guest chair with leather upholstery\nand wooden base.",
+        "Item Code LF23",
+        "No.",
+        "5",
+        "55",
+        "275.000"
+      ],
+      "description": "Supplying and fixing of Guest chair with leather upholstery\nand wooden base.",
+      "rate": 275.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.26",
+        "Funiture and fiitings",
+        "Supplying and fixing of swivel and height adjustable High back\nexecutive office chair with leather upholstery and\npowder coated matte black base.",
+        "Item Code LF23A",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "Supplying and fixing of swivel and height adjustable High back\nexecutive office chair with leather upholstery and\npowder coated matte black base.",
+      "rate": 85.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.27",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of square Coffee table.",
+        "Item Code LF24",
+        "No.",
+        "3",
+        "45",
+        "135.000"
+      ],
+      "description": "Supplying and fixing of square Coffee table.",
+      "rate": 135.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.28",
+        "Funiture and fiitings",
+        "Supplying and fixing of Electrical operating height adjustable\nrectangular executive tall desk with wooden top and metal base\nwith integrated CPU holder and modesty panel. Including WIFI\ncharger. Integrated with luxafor flag LED busy light that\neliminates workspace distractions with all software and\naccessories related to it. Flag to be powered by USB powered\nwith a standard micro USB\ndata cable.",
+        "Item Code LF24A",
+        "No.",
+        "4",
+        "190",
+        "760.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 760.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.29",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of meeting room chair with casters.",
+        "Item Code LF26",
+        "No.",
+        "11",
+        "65",
+        "715.000"
+      ],
+      "description": "Supplying and fixing of meeting room chair with casters.",
+      "rate": 715.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.30",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of 3 seater sofa fabric upholstery and\nmetal base.",
+        "Item Code LF27",
+        "No.",
+        "5",
+        "150",
+        "750.000"
+      ],
+      "description": "Supplying and fixing of 3 seater sofa fabric upholstery and\nmetal base.",
+      "rate": 750.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.31",
+        "Funiture and fiitings",
+        "Supplying and fixing of floor mounted wooden state partition along\nwith bean shaped office desk. Electrical operating height\nadjustable rectangular executive tall desk with wooden top and\nmetal base with integrated CPU holder and modesty panel.\nIncluding WIFI charger.\nIntegrated with luxafor flag LED busy light that eliminates\nworkspace distractions with all software and accessories related\nto it. Flag to be powered by USB powered with a\nstandard micro USB data cable.",
+        "Item Code LF27A",
+        "No.",
+        "2",
+        "2500",
+        "5,000.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 5000.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.32",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Square coffee table.",
+        "Item Code LF29",
+        "No.",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "Supplying and fixing of Square coffee table.",
+      "rate": 130.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.33",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of pantry table.",
+        "Item Code LF29A",
+        "No.",
+        "2",
+        "1250",
+        "2,500.000"
+      ],
+      "description": "Supplying and fixing of pantry table.",
+      "rate": 2500.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.34",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of meeting room chair with casters.",
+        "Item Code LF30",
+        "No.",
+        "9",
+        "65",
+        "585.000"
+      ],
+      "description": "Supplying and fixing of meeting room chair with casters.",
+      "rate": 585.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.35",
+        "Funiture and fiitings",
+        "Supplying and fixing of rectangular shape table with wood top and\nmetal base and grey writing pad on top with\nintegrated wire manager.",
+        "Item Code LF31",
+        "No.",
+        "1",
+        "280",
+        "280.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 280.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.36",
+        "Funiture and fiitings",
+        "Supplying and fixing of L- shaped reception desk with integrated\nwire manager and designated area for storage\nand CPU.",
+        "Item Code LF32",
+        "No.",
+        "1",
+        "1500",
+        "1,500.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 1500.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.37",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Square shape table with wood top\nand metal base.",
+        "Item Code LF36",
+        "No.",
+        "4",
+        "55",
+        "220.000"
+      ],
+      "description": "Supplying and fixing of Square shape table with wood top\nand metal base.",
+      "rate": 220.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.38",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of chair with wooden legs and plastic\nshell (Egg Shell).",
+        "Item Code LF37",
+        "No.",
+        "8",
+        "39",
+        "312.000"
+      ],
+      "description": "Supplying and fixing of chair with wooden legs and plastic\nshell (Egg Shell).",
+      "rate": 312.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.39",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of chair with wooden legs and plastic\nshell (Sage green).",
+        "Item Code LF37",
+        "No.",
+        "8",
+        "39",
+        "312.000"
+      ],
+      "description": "Supplying and fixing of chair with wooden legs and plastic\nshell (Sage green).",
+      "rate": 312.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.40",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of high bar chairs with metal legs,\nplastic shell and fabric padding.",
+        "Item Code LF39",
+        "No.",
+        "3",
+        "35",
+        "105.000"
+      ],
+      "description": "Supplying and fixing of high bar chairs with metal legs,\nplastic shell and fabric padding.",
+      "rate": 105.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.41",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of chair with wooden legs and plastic\nshell (Egg Shell).",
+        "Item Code LF40",
+        "No.",
+        "5",
+        "39",
+        "195.000"
+      ],
+      "description": "Supplying and fixing of chair with wooden legs and plastic\nshell (Egg Shell).",
+      "rate": 195.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.42",
+        "Funiture and fiitings",
+        "Supplying and fixing of Wall mounted booth seating with\nintegrated planter boxes with cushions and artificial plants and\npebbles.",
+        "Item Code LF41",
+        "No.",
+        "1",
+        "2500",
+        "2,500.000"
+      ],
+      "description": "Funiture and fiitings",
+      "rate": 2500.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.43",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of chair with wooden legs and fabric\nupholstery.",
+        "Item Code LF42",
+        "No.",
+        "5",
+        "40",
+        "200.000"
+      ],
+      "description": "Supplying and fixing of chair with wooden legs and fabric\nupholstery.",
+      "rate": 200.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.44",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Serving counter with tile base and\nwooden top.",
+        "Item Code LF43",
+        "No.",
+        "1",
+        "2800",
+        "2,800.000"
+      ],
+      "description": "Supplying and fixing of Serving counter with tile base and\nwooden top.",
+      "rate": 2800.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.45",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of bench.",
+        "Item Code LF51",
+        "No.",
+        "2",
+        "280",
+        "560.000"
+      ],
+      "description": "Supplying and fixing of bench.",
+      "rate": 560.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.46",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of foldable table.",
+        "Item Code LF52",
+        "No.",
+        "36",
+        "150",
+        "5,400.000"
+      ],
+      "description": "Supplying and fixing of foldable table.",
+      "rate": 5400.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.47",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of Foldable chair with castors.",
+        "Item Code LF53",
+        "No.",
+        "36",
+        "45",
+        "1,620.000"
+      ],
+      "description": "Supplying and fixing of Foldable chair with castors.",
+      "rate": 1620.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.48",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of mobile storage rack.",
+        "Item Code LF54",
+        "No.",
+        "240",
+        "110",
+        "26,400.000"
+      ],
+      "description": "Supplying and fixing of mobile storage rack.",
+      "rate": 26400.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.49",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of coffee table.",
+        "Item Code LF55",
+        "No.",
+        "1",
+        "640",
+        "640.000"
+      ],
+      "description": "Supplying and fixing of coffee table.",
+      "rate": 640.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.50",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of shoe rack.",
+        "Item Code LF56",
+        "No.",
+        "2",
+        "200",
+        "400.000"
+      ],
+      "description": "Supplying and fixing of shoe rack.",
+      "rate": 400.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.51",
+        "Funiture and\nfiitings",
+        "Supplying and fixing of storage rack.",
+        "Item Code LF57",
+        "No.",
+        "10",
+        "120",
+        "1,200.000"
+      ],
+      "description": "Supplying and fixing of storage rack.",
+      "rate": 1200.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.52",
+        "Funiture and\nfiitings",
+        "4-seater sofa fabric upholstery, decorative partition and\nmetal base.",
+        "Item Code LF59",
+        "No.",
+        "1",
+        "1500",
+        "1,500.000"
+      ],
+      "description": "4-seater sofa fabric upholstery, decorative partition and\nmetal base.",
+      "rate": 1500.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.53",
+        "Funiture and\nfiitings",
+        "PVD coated metal states with numbering.",
+        "Item Code LF61",
+        "No.",
+        "5",
+        "527",
+        "2,635.000"
+      ],
+      "description": "PVD coated metal states with numbering.",
+      "rate": 2635.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.54",
+        "Funiture and\nfiitings",
+        "Induction plank with two numbers of induction elements.",
+        "Item Code EQ-01",
+        "No.",
+        "4",
+        "300",
+        "1,200.000"
+      ],
+      "description": "Induction plank with two numbers of induction elements.",
+      "rate": 1200.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.55",
+        "Funiture and\nfiitings",
+        "Built in microwave.",
+        "Item Code EQ-02",
+        "No.",
+        "5",
+        "510",
+        "2,550.000"
+      ],
+      "description": "Funiture and\nfiitings",
+      "rate": 2550.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.56",
+        "Funiture and\nfiitings",
+        "Free standing built and concealed in fridge and freezer\nwith freezer at the bottom, glass doors.",
+        "Item Code EQ-03",
+        "No.",
+        "4",
+        "705",
+        "2,820.000"
+      ],
+      "description": "Free standing built and concealed in fridge and freezer\nwith freezer at the bottom, glass doors.",
+      "rate": 2820.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.57",
+        "Funiture and\nfiitings",
+        "Wall mounted TV set-size 85 inch includes Chromecast\ndongle.",
+        "Item Code EQ-05",
+        "No.",
+        "13",
+        "1200",
+        "15,600.000"
+      ],
+      "description": "Wall mounted TV set-size 85 inch includes Chromecast\ndongle.",
+      "rate": 15600.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.58",
+        "Funiture and\nfiitings",
+        "Wall mounted TV set-size 75 inch includes Chromecast\ndongle.",
+        "Item Code EQ-06",
+        "No.",
+        "2",
+        "900",
+        "1,800.000"
+      ],
+      "description": "Wall mounted TV set-size 75 inch includes Chromecast\ndongle.",
+      "rate": 1800.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.59",
+        "Funiture and\nfiitings",
+        "Wall mounted TV set-size 65 inch includes Chromecast\ndongle.",
+        "Item Code EQ-07",
+        "No.",
+        "2",
+        "600",
+        "1,200.000"
+      ],
+      "description": "Wall mounted TV set-size 65 inch includes Chromecast\ndongle.",
+      "rate": 1200.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.60",
+        "Funiture and\nfiitings",
+        "Design, supply and install of HSE corner as per\nspecification.",
+        "Item Code",
+        "No.",
+        "2",
+        "850",
+        "1,700.000"
+      ],
+      "description": "Design, supply and install of HSE corner as per\nspecification.",
+      "rate": 1700.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.61",
+        "Funiture and\nfiitings",
+        "video wall Display 85 inch (commercial) for Feature wall.",
+        "Item Code",
+        "No.",
+        "1",
+        "3600",
+        "3,600.000"
+      ],
+      "description": "video wall Display 85 inch (commercial) for Feature wall.",
+      "rate": 3600.0
+    },
+    {
+      "category": "furniture",
+      "raw_data": [
+        "Bill No.\n01.62",
+        "Funiture and fiitings",
+        "feature wall including natural moss wall with metal frame as per\napproved design pattern with powder coated finish.\nSize 3400 X 3200 mm H.",
+        "Item Code",
+        "No.",
+        "1",
+        "2400",
+        "2,400.000"
+      ],
+      "description": "feature wall including natural moss wall with metal frame as per\napproved design pattern with powder coated finish.\nSize 3400 X 3200 mm H.",
+      "rate": 2400.0
+    }
+  ],
+  "fitout": [
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.1",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL FINISHES",
+        "Mechanically fixed marble, 20mm thick stone as per\napproved sample.",
+        "Item code MA-201",
+        "m2",
+        "4",
+        "26",
+        "104.000"
+      ],
+      "description": "Mechanically fixed marble, 20mm thick stone as per\napproved sample.",
+      "rate": 104.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.2",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL FINISHES",
+        "Mechanically fixed marble, 20mm thick stone as per\napproved sample.",
+        "Item Code MA-202",
+        "m2",
+        "2",
+        "26",
+        "52.000"
+      ],
+      "description": "Mechanically fixed marble, 20mm thick stone as per\napproved sample.",
+      "rate": 52.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.3",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL\nFINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "56",
+        "55",
+        "3,080.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 3080.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.4",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL\nFINISHES",
+        "12 mm thick toughened clear rippled glass.",
+        "Item Code GL-102",
+        "m2",
+        "11",
+        "110",
+        "1,210.000"
+      ],
+      "description": "12 mm thick toughened clear rippled glass.",
+      "rate": 1210.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.5",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "19",
+        "65",
+        "1,235.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 1235.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.6",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL FINISHES",
+        "Fabric upholstery wrapped around shelve\nintegrated in the metal feature wall with white board\nand artificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "GROUND FLOOR, MAIN\nENTRANCES, WALL FINISHES",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.7",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL\nFINISHES",
+        "Textured paint matt finish brushed suede effect Low\nVOC emulation paint.",
+        "Item Code PT-202",
+        "m2",
+        "38",
+        "8",
+        "304.000"
+      ],
+      "description": "Textured paint matt finish brushed suede effect Low\nVOC emulation paint.",
+      "rate": 304.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.8",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "61",
+        "20",
+        "1,220.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 1220.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.9",
+        "GROUND FLOOR, MAIN\nENTRANCES, WALL\nFINISHES",
+        "Art work (overall size 1900x2000 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "210",
+        "420.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 420.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.10",
+        "GROUND FLOOR, MAIN\nENTRANCES, SKIRING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "14",
+        "12",
+        "168.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 168.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.11",
+        "GROUND FLOOR, MAIN\nENTRANCES, SKIRING",
+        "Metal logo with back-lighting",
+        "Brushed brass finish",
+        "No.",
+        "1",
+        "450",
+        "450.000"
+      ],
+      "description": "Metal logo with back-lighting",
+      "rate": 450.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.12",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nFLOOR FINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "74",
+        "19",
+        "1,406.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1406.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.13",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nFLOOR FINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-102",
+        "m2",
+        "26",
+        "19",
+        "494.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 494.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.14",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nFLOOR FINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia .",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia .",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.15",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "15",
+        "55",
+        "825.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 825.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.16",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "13",
+        "70",
+        "910.000"
+      ],
+      "description": "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+      "rate": 910.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.17",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "132",
+        "20",
+        "2,640.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 2640.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.18",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white\nboard and artificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "6",
+        "40",
+        "240.000"
+      ],
+      "description": "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+      "rate": 240.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.19",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white\nboard and artificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "4",
+        "65",
+        "260.000"
+      ],
+      "description": "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+      "rate": 260.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.20",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "4",
+        "85",
+        "340.000"
+      ],
+      "description": "As per specifications",
+      "rate": 340.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.21",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "6",
+        "55",
+        "330.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 330.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.22",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nWALL FINISHES",
+        "12 mm thick toughened clear rippled glass.",
+        "Item Code GL-102",
+        "m2",
+        "6",
+        "110",
+        "660.000"
+      ],
+      "description": "12 mm thick toughened clear rippled glass.",
+      "rate": 660.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.23",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nSKIRING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "20",
+        "12",
+        "240.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 240.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.24",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nCEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off\nwhite as\nper engineer approval).",
+        "Item Code AP-101",
+        "m2",
+        "16",
+        "90",
+        "1,440.000"
+      ],
+      "description": "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nCEILING",
+      "rate": 1440.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.25",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nCEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "38",
+        "90",
+        "3,420.000"
+      ],
+      "description": "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nCEILING",
+      "rate": 3420.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.26",
+        "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nCEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off-\nwhite as\nper engineer approval).",
+        "Item Code AP-103",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "GROUND FLOOR, URBAN\nPLANNING DEPARTMENT,\nCEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.27",
+        "GROUND FLOOR, LAND\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "67",
+        "19",
+        "1,273.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1273.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.28",
+        "GROUND FLOOR, LAND\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-102",
+        "m2",
+        "26",
+        "19",
+        "494.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 494.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.29",
+        "GROUND FLOOR, LAND\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia.",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia.",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.30",
+        "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+        "Laminate with matte brushed shelf.",
+        "Item Code LA-202",
+        "m2",
+        "3",
+        "90",
+        "270.000"
+      ],
+      "description": "Laminate with matte brushed shelf.",
+      "rate": 270.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.31",
+        "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white\nboard and artificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "1",
+        "65",
+        "65.000"
+      ],
+      "description": "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 65.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.32",
+        "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white\nboard and artificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "1",
+        "40",
+        "40.000"
+      ],
+      "description": "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 40.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.33",
+        "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "8",
+        "20",
+        "160.000"
+      ],
+      "description": "As per specifications",
+      "rate": 160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.34",
+        "GROUND FLOOR, LAND\nDEPARTMENT, WALL\nFINISHES",
+        "Horizontal window curtain for window size 6000x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "195",
+        "390.000"
+      ],
+      "description": "As per specifications",
+      "rate": 390.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.35",
+        "GROUND FLOOR, LAND\nDEPARTMENT, WALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.36",
+        "GROUND FLOOR, LAND\nDEPARTMENT, SKIRING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "28",
+        "12",
+        "336.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 336.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.37",
+        "GROUND FLOOR, LAND\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off\nwhite as\nper engineer approval).",
+        "Item Code AP-101",
+        "m2",
+        "15",
+        "90",
+        "1,350.000"
+      ],
+      "description": "GROUND FLOOR, LAND\nDEPARTMENT, CEILING",
+      "rate": 1350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.38",
+        "GROUND FLOOR, LAND\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "GROUND FLOOR, LAND\nDEPARTMENT, CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.39",
+        "GROUND FLOOR, LAND\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off-\nwhite as\nper engineer approval).",
+        "Item Code AP-103",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "GROUND FLOOR, LAND\nDEPARTMENT, CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.40",
+        "GROUND FLOOR, MEETING\nROOM, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "46",
+        "19",
+        "874.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 874.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.41",
+        "GROUND FLOOR,\nMEETING ROOM, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-102",
+        "m2",
+        "21",
+        "19",
+        "399.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 399.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.42",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "20 mm groves painted dark grey",
+        "As per specifications",
+        "m",
+        "30",
+        "20",
+        "600.000"
+      ],
+      "description": "As per specifications",
+      "rate": 600.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.43",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Cabinet with laminate with matte brushed finish and\nlaminate with matte brushed.",
+        "Item Code LA-101 and LA-\n102",
+        "m2",
+        "4",
+        "85",
+        "340.000"
+      ],
+      "description": "Item Code LA-101 and LA-\n102",
+      "rate": 340.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.44",
+        "GROUND FLOOR,\nMEETING ROOM, WALL\nFINISHES",
+        "Laminate with matte brushed finish.",
+        "Item Code LA-101",
+        "m2",
+        "10",
+        "85",
+        "850.000"
+      ],
+      "description": "Laminate with matte brushed finish.",
+      "rate": 850.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.45",
+        "GROUND FLOOR,\nMEETING ROOM, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.46",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Horizontal window curtain for window size 6200x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "201",
+        "201.000"
+      ],
+      "description": "As per specifications",
+      "rate": 201.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.47",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Non-woven vinyl backed textured wallpaper cladded\nover MDF.",
+        "Item Code WP-101",
+        "m2",
+        "4",
+        "35",
+        "140.000"
+      ],
+      "description": "Non-woven vinyl backed textured wallpaper cladded\nover MDF.",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.48",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Art work (overall size 600x1000 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.49",
+        "GROUND FLOOR,\nMEETING ROOM, WALL\nFINISHES",
+        "Art work (overall size 1200x1500 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "130",
+        "260.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 260.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.50",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel shelving.",
+        "Item Code WD-101",
+        "No.",
+        "1",
+        "65",
+        "65.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel shelving.",
+      "rate": 65.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.51",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "6",
+        "65",
+        "390.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 390.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.52",
+        "GROUND FLOOR, MEETING\nROOM, WALL\nFINISHES",
+        "Prefabricated wooded fluted panel.",
+        "Item Code WD-102",
+        "m2",
+        "21",
+        "85",
+        "1,785.000"
+      ],
+      "description": "Prefabricated wooded fluted panel.",
+      "rate": 1785.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.53",
+        "GROUND FLOOR, MEETING\nROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "19",
+        "12",
+        "228.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 228.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.54",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-101",
+        "m2",
+        "81",
+        "19",
+        "1,539.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 1539.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.55",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-102",
+        "m2",
+        "24",
+        "19",
+        "456.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 456.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.56",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia.",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia.",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.57",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "85",
+        "170.000"
+      ],
+      "description": "As per specifications",
+      "rate": 170.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.58",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "8",
+        "20",
+        "160.000"
+      ],
+      "description": "As per specifications",
+      "rate": 160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.59",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "5",
+        "70",
+        "350.000"
+      ],
+      "description": "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.60",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Art work (overall size 600x1000 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.61",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Art work (overall size 1800x2300 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "1",
+        "260",
+        "260.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 260.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.62",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.63",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "3",
+        "40",
+        "120.000"
+      ],
+      "description": "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 120.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.64",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel shelving.",
+        "Item Code WD-101",
+        "No.",
+        "7",
+        "55",
+        "385.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel shelving.",
+      "rate": 385.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.65",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, WALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "43",
+        "20",
+        "860.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 860.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.66",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "27",
+        "12",
+        "324.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 324.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.67",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off\nwhite as\nper engineer approval).",
+        "Item Code AP-101",
+        "m2",
+        "15",
+        "90",
+        "1,350.000"
+      ],
+      "description": "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, CEILING",
+      "rate": 1350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.68",
+        "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off-\nwhite as\nper engineer approval).",
+        "Item Code AP-103",
+        "m2",
+        "24",
+        "90",
+        "2,160.000"
+      ],
+      "description": "GROUND FLOOR, REAL\nESTATE REGISTRY\nDEPARTMENT, CEILING",
+      "rate": 2160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.69",
+        "GROUND FLOOR,\nDRIVER'S ROOM, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.70",
+        "GROUND FLOOR, DRIVER'S\nROOM, WALL\nFINISHES",
+        "Laminate with matte brushed finish base cabinet all\nwith korean countertop.",
+        "Item Code LA-201",
+        "m",
+        "4",
+        "140",
+        "560.000"
+      ],
+      "description": "Laminate with matte brushed finish base cabinet all\nwith korean countertop.",
+      "rate": 560.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.71",
+        "GROUND FLOOR, DRIVER'S\nROOM, WALL FINISHES",
+        "Laminate with matte brushed finish overhead cabinet\nincluding gypsum board painted with same color\nmatch to cabinet and shall be cover\nthe area above up to ceiling.",
+        "Item Code LA-201",
+        "m",
+        "4",
+        "155",
+        "620.000"
+      ],
+      "description": "Laminate with matte brushed finish overhead cabinet\nincluding gypsum board painted with same color\nmatch to cabinet and shall be cover\nthe area above up to ceiling.",
+      "rate": 620.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.72",
+        "GROUND FLOOR, DRIVER'S\nROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "16",
+        "12",
+        "192.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 192.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.73",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL\nFINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "5",
+        "55",
+        "275.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 275.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.74",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL FINISHES",
+        "12 mm thick toughened clear rippled glass.",
+        "Item Code GL-102",
+        "m2",
+        "2",
+        "110",
+        "220.000"
+      ],
+      "description": "12 mm thick toughened clear rippled glass.",
+      "rate": 220.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.75",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.76",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL FINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "25",
+        "20",
+        "500.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 500.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.77",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL FINISHES",
+        "Base cabinet with korean countertop.",
+        "Item Code LF-29A",
+        "m",
+        "7",
+        "140",
+        "980.000"
+      ],
+      "description": "Base cabinet with korean countertop.",
+      "rate": 980.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.78",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL\nFINISHES",
+        "Overhead cabinet including gypsum board painted\nwith same color match to cabinet and\nshall be cover the area above up to ceiling.",
+        "Item Code LF-29A",
+        "m",
+        "7",
+        "155",
+        "1,085.000"
+      ],
+      "description": "Overhead cabinet including gypsum board painted\nwith same color match to cabinet and\nshall be cover the area above up to ceiling.",
+      "rate": 1085.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.79",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, WALL\nFINISHES",
+        "Fixed coffee table 20 mm table",
+        "As per specifications",
+        "m",
+        "3",
+        "105",
+        "315.000"
+      ],
+      "description": "As per specifications",
+      "rate": 315.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.80",
+        "GROUND FLOOR, OPEN\nCAFÉ/PANTRY, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "7",
+        "12",
+        "84.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 84.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.81",
+        "GROUND FLOOR, MALE\nTOILET (Near Lift), WALL\nFINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "3",
+        "75",
+        "225.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 225.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.82",
+        "GROUND FLOOR, VIP\nCUSTOMER TOILET, WALL\nFINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "4",
+        "75",
+        "300.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 300.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.83",
+        "GROUND FLOOR, MALE\nTOILET, WALL FINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "2",
+        "75",
+        "150.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.84",
+        "GROUND FLOOR, CUSTOMER\nSERVICE,\nFLOOR FINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia",
+        "Item Code CA-103",
+        "m2",
+        "35",
+        "19",
+        "665.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia",
+      "rate": 665.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.85",
+        "GROUND FLOOR, CUSTOMER\nSERVICE,\nWALL FINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "4",
+        "70",
+        "280.000"
+      ],
+      "description": "GROUND FLOOR, CUSTOMER\nSERVICE,\nWALL FINISHES",
+      "rate": 280.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.86",
+        "GROUND FLOOR, CUSTOMER\nSERVICE,\nWALL FINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white\nboard and artificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "3",
+        "40",
+        "120.000"
+      ],
+      "description": "GROUND FLOOR, CUSTOMER\nSERVICE,\nWALL FINISHES",
+      "rate": 120.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.87",
+        "GROUND FLOOR,\nCUSTOMER SERVICE, WALL\nFINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "6",
+        "55",
+        "330.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 330.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.88",
+        "GROUND FLOOR,\nCUSTOMER SERVICE, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "2",
+        "55",
+        "110.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 110.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.89",
+        "GROUND FLOOR,\nCUSTOMER SERVICE, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve\nintegrated in the metal feature wall with white board\nand artificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "1",
+        "55",
+        "55.000"
+      ],
+      "description": "GROUND FLOOR,\nCUSTOMER SERVICE, WALL\nFINISHES",
+      "rate": 55.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.90",
+        "GROUND FLOOR,\nCUSTOMER SERVICE, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "3",
+        "85",
+        "255.000"
+      ],
+      "description": "As per specifications",
+      "rate": 255.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.91",
+        "GROUND FLOOR,\nCUSTOMER SERVICE, WALL\nFINISHES",
+        "Non-woven vinyl backed textured wallpaper cladded\nover MDF.",
+        "Item Code WP-101",
+        "m2",
+        "21",
+        "35",
+        "735.000"
+      ],
+      "description": "Non-woven vinyl backed textured wallpaper cladded\nover MDF.",
+      "rate": 735.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.92",
+        "GROUND FLOOR, CUSTOMER\nSERVICE,\nWALL FINISHES",
+        "Black color PVD coated stainless steel. Including\nmetal Logo and LED strip light.",
+        "Item Code MT-101",
+        "m",
+        "45",
+        "40",
+        "1,800.000"
+      ],
+      "description": "Black color PVD coated stainless steel. Including\nmetal Logo and LED strip light.",
+      "rate": 1800.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.93",
+        "GROUND FLOOR, CUSTOMER\nSERVICE,\nSKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "35",
+        "12",
+        "420.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 420.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.94",
+        "GROUND FLOOR,\nKIOSK/WAITING AREA,\nWALL FINISHES",
+        "20 mm groves painted dark grey",
+        "As per specifications",
+        "m",
+        "19",
+        "20",
+        "380.000"
+      ],
+      "description": "As per specifications",
+      "rate": 380.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.95",
+        "GROUND FLOOR,\nKIOSK/WAITING AREA, WALL\nFINISHES",
+        "Art work (overall size1000x1500 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "1",
+        "115",
+        "115.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 115.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.96",
+        "GROUND FLOOR,\nKIOSK/WAITING AREA,\nWALL FINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "7",
+        "55",
+        "385.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 385.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.97",
+        "GROUND FLOOR,\nKIOSK/WAITING AREA,\nWALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "8",
+        "65",
+        "520.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 520.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.98",
+        "GROUND FLOOR,\nKIOSK/WAITING AREA,\nWALL FINISHES",
+        "Prefabricated wooded fluted panel.",
+        "Item Code WD-102",
+        "m2",
+        "5",
+        "85",
+        "425.000"
+      ],
+      "description": "Prefabricated wooded fluted panel.",
+      "rate": 425.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.99",
+        "GROUND FLOOR,\nKIOSK/WAITING AREA,\nSKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "11",
+        "12",
+        "132.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 132.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.100",
+        "GROUND FLOOR, GEN SET\nSTORE, WALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.101",
+        "GROUND FLOOR, GEN SET\nSTORE, WALL FINISHES",
+        "Horizontal window curtain for window size 6200x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "201",
+        "201.000"
+      ],
+      "description": "As per specifications",
+      "rate": 201.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.102",
+        "GROUND FLOOR, LOBBY,\nFLOOR FINISHES, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "7",
+        "65",
+        "455.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 455.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.103",
+        "GROUND FLOOR, LOBBY,\nFLOOR FINISHES, WALL\nFINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "11",
+        "55",
+        "605.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 605.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.104",
+        "GROUND FLOOR, LOBBY,\nFLOOR FINISHES, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "7",
+        "12",
+        "84.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 84.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.105",
+        "GROUND FLOOR, MALE\nTOILET, WALL FINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "2",
+        "75",
+        "150.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.106",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "60",
+        "19",
+        "1,140.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.107",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "Textured paint matt finish brushed suede effect Low\nVOC emulation paint.",
+        "Item Code PT-103",
+        "m2",
+        "43",
+        "8",
+        "344.000"
+      ],
+      "description": "Textured paint matt finish brushed suede effect Low\nVOC emulation paint.",
+      "rate": 344.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.108",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "20 mm groves painted dark grey",
+        "As per specifications",
+        "m",
+        "25",
+        "20",
+        "500.000"
+      ],
+      "description": "As per specifications",
+      "rate": 500.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.109",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "21",
+        "50",
+        "1,050.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 1050.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.110",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "9",
+        "20",
+        "180.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 180.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.111",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "Horizontal window curtain for window size 6200x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "201",
+        "402.000"
+      ],
+      "description": "As per specifications",
+      "rate": 402.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.112",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "1",
+        "40",
+        "40.000"
+      ],
+      "description": "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+      "rate": 40.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.113",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "5",
+        "55",
+        "275.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 275.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.114",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), WALL\nFINISHES",
+        "Prefabricated wooded fluted panel.",
+        "Item Code WD-102",
+        "m2",
+        "12",
+        "65",
+        "780.000"
+      ],
+      "description": "Prefabricated wooded fluted panel.",
+      "rate": 780.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.115",
+        "GROUND FLOOR, MEETING\nROOM (Next to\nManager Office), SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "21",
+        "12",
+        "252.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 252.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.116",
+        "GROUND FLOOR,\nMANAGER OFFICE, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "24",
+        "19",
+        "456.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 456.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.117",
+        "GROUND FLOOR,\nMANAGER OFFICE, FLOOR\nFINISHES, WALL FINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "27",
+        "55",
+        "1,485.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 1485.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.118",
+        "GROUND FLOOR,\nMANAGER OFFICE, FLOOR\nFINISHES, WALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.119",
+        "GROUND FLOOR, MANAGER\nOFFICE, FLOOR\nFINISHES, WALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "3",
+        "55",
+        "165.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 165.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.120",
+        "GROUND FLOOR,\nMANAGER OFFICE, FLOOR\nFINISHES, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "10",
+        "12",
+        "120.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 120.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.121",
+        "GROUND FLOOR, WAITING\nAREA, WALL FINISHES",
+        "Horizontal window curtain for window size\n2600x2800 mm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "85",
+        "170.000"
+      ],
+      "description": "As per specifications",
+      "rate": 170.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.122",
+        "GROUND FLOOR, WAITING\nAREA, WALL FINISHES",
+        "10 mm thick frosted toughened glass decorative\npartition.",
+        "As per specifications",
+        "m2",
+        "11",
+        "45",
+        "495.000"
+      ],
+      "description": "As per specifications",
+      "rate": 495.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.123",
+        "GROUND FLOOR, WAITING\nAREA, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "26",
+        "12",
+        "312.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 312.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.124",
+        "GROUND FLOOR, VIP\nLOUNGE, FLOOR FINISHES",
+        "9mm Thick custom design wall to wall tile with\nunderlay.",
+        "Item Code CA-104",
+        "m2",
+        "74",
+        "19",
+        "1,406.000"
+      ],
+      "description": "9mm Thick custom design wall to wall tile with\nunderlay.",
+      "rate": 1406.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.125",
+        "GROUND FLOOR, VIP\nLOUNGE, WALL FINISHES",
+        "Horizontal window curtain for window size\n2600x2800 mm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "85",
+        "170.000"
+      ],
+      "description": "As per specifications",
+      "rate": 170.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.126",
+        "GROUND FLOOR, VIP\nLOUNGE, WALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "3",
+        "55",
+        "165.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 165.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.127",
+        "GROUND FLOOR, VIP\nLOUNGE, WALL FINISHES",
+        "12 mm thick toughened clear glass with vinyl\nsticker signage.",
+        "Item Code GL-101",
+        "m2",
+        "18",
+        "50",
+        "900.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl\nsticker signage.",
+      "rate": 900.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.128",
+        "GROUND FLOOR, VIP\nLOUNGE, WALL FINISHES",
+        "Sliding door with GL-101, GL-102, MT-101, FB- 101\nas composite unit, overall size 3400x3300\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "400",
+        "400.000"
+      ],
+      "description": "As per specifications",
+      "rate": 400.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.129",
+        "GROUND FLOOR, VIP\nLOUNGE, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "25",
+        "12",
+        "300.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 300.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.130",
+        "GROUND FLOOR,\nPASSAGE, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "32",
+        "12",
+        "384.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 384.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.131",
+        "GROUND FLOOR, PASSAGE,\nCEILING",
+        "white oak veneered Wood Slats suspended from\nceiling. Open ceiling above to be painted\n(off-white as per engineer approval).",
+        "Item Code WS-101",
+        "m2",
+        "40",
+        "35",
+        "1,400.000"
+      ],
+      "description": "white oak veneered Wood Slats suspended from\nceiling. Open ceiling above to be painted\n(off-white as per engineer approval).",
+      "rate": 1400.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.132",
+        "FIRST FLOOR, ARCHIVE\nROOM, WALL FINISHES",
+        "Horizontal window curtain for window size\n2600x2800 mm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.133",
+        "FIRST FLOOR, ARCHIVE\nROOM, WALL FINISHES",
+        "Horizontal window curtain for window size\n6200x2800 mm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "201",
+        "201.000"
+      ],
+      "description": "As per specifications",
+      "rate": 201.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.134",
+        "FIRST FLOOR, ARCHIVE\nROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "31",
+        "12",
+        "372.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 372.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.135",
+        "FIRST FLOOR, MALE\nTOILET (Next to Archive), WALL\nFINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "2",
+        "75",
+        "150.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.136",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nFLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "67",
+        "19",
+        "1,273.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1273.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.137",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nFLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-102",
+        "m2",
+        "19",
+        "19",
+        "361.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 361.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.138",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nFLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.139",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "1",
+        "40",
+        "40.000"
+      ],
+      "description": "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+      "rate": 40.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.140",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "1",
+        "65",
+        "65.000"
+      ],
+      "description": "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+      "rate": 65.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.141",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "1",
+        "55",
+        "55.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 55.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.142",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.143",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Horizontal window curtain for window size 6200x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "201",
+        "402.000"
+      ],
+      "description": "As per specifications",
+      "rate": 402.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.144",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "15",
+        "20",
+        "300.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 300.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.145",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "7",
+        "20",
+        "140.000"
+      ],
+      "description": "As per specifications",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.146",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Fully vitrified porcelain tiles 10mm thick with epoxy\ngrout to match tile color for back splash.",
+        "Item Code VT-201",
+        "m2",
+        "25",
+        "26",
+        "650.000"
+      ],
+      "description": "Fully vitrified porcelain tiles 10mm thick with epoxy\ngrout to match tile color for back splash.",
+      "rate": 650.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.147",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Laminate with matte brushed finish base cabinet\nalong with korean countertop.",
+        "Item Code LA-201",
+        "m",
+        "3",
+        "140",
+        "420.000"
+      ],
+      "description": "Laminate with matte brushed finish base cabinet\nalong with korean countertop.",
+      "rate": 420.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.148",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nWALL\nFINISHES",
+        "Laminate with matte brushed finish overhead cabinet\nincluding gypsum board painted with same color\nmatch to cabinet and shall be cover the area above\nup to ceiling.",
+        "Item Code LA-201",
+        "m",
+        "3",
+        "155",
+        "465.000"
+      ],
+      "description": "Laminate with matte brushed finish overhead cabinet\nincluding gypsum board painted with same color\nmatch to cabinet and shall be cover the area above\nup to ceiling.",
+      "rate": 465.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.149",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP\nDEPARTMENT, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "36",
+        "12",
+        "432.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 432.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.150",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nCEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nCEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.151",
+        "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nCEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off-\nwhite as\nper engineer approval).",
+        "Item Code AP-103",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR, PROOF AND\nREGISTRATION OF\nOWNERSHIP DEPARTMENT,\nCEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.152",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "103",
+        "19",
+        "1,957.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1957.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.153",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-102",
+        "m2",
+        "26",
+        "19",
+        "494.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 494.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.154",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.155",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Textured paint matt finish brushed suede effect Low\nVOC emulation paint.",
+        "Item Code PT-103",
+        "m2",
+        "163",
+        "8",
+        "1,304.000"
+      ],
+      "description": "Textured paint matt finish brushed suede effect Low\nVOC emulation paint.",
+      "rate": 1304.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.156",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "4",
+        "40",
+        "160.000"
+      ],
+      "description": "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.157",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.158",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "4",
+        "55",
+        "220.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 220.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.159",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "3",
+        "85",
+        "255.000"
+      ],
+      "description": "As per specifications",
+      "rate": 255.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.160",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Art work size 600x1000 mm.",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.161",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Art work size 1800x2200 mm.",
+        "To the approval of the\nEngineer",
+        "No.",
+        "1",
+        "260",
+        "260.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 260.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.162",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "56",
+        "20",
+        "1,120.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 1120.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.163",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "7",
+        "20",
+        "140.000"
+      ],
+      "description": "As per specifications",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.164",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "5",
+        "70",
+        "350.000"
+      ],
+      "description": "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.165",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, WALL\nFINISHES",
+        "Open shelf",
+        "As per specifications",
+        "m2",
+        "3",
+        "90",
+        "270.000"
+      ],
+      "description": "As per specifications",
+      "rate": 270.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.166",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "45",
+        "12",
+        "540.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 540.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.167",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off\nwhite as\nper engineer approval).",
+        "Item Code AP-101",
+        "m2",
+        "30",
+        "90",
+        "2,700.000"
+      ],
+      "description": "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, CEILING",
+      "rate": 2700.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.168",
+        "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR, SOCIAL\nHOUSING AND PROJECTS\nDEPARTMENT, CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.169",
+        "FIRST FLOOR, MALE PRAYER\nROOM, FLOOR\nFINISHES",
+        "9mm Thick custom design wall to wall carpet with\nunderlay.",
+        "Item Code CA-106",
+        "m2",
+        "32",
+        "19",
+        "608.000"
+      ],
+      "description": "9mm Thick custom design wall to wall carpet with\nunderlay.",
+      "rate": 608.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.170",
+        "FIRST FLOOR, MALE PRAYER\nROOM, WALL\nFINISHES",
+        "20 mm groves painted dark grey",
+        "As per specifications",
+        "m",
+        "22",
+        "20",
+        "440.000"
+      ],
+      "description": "As per specifications",
+      "rate": 440.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.171",
+        "FIRST FLOOR, MALE\nPRAYER ROOM, WALL\nFINISHES",
+        "2000 mm high temporary partition",
+        "As per specifications",
+        "m2",
+        "6",
+        "25",
+        "150.000"
+      ],
+      "description": "As per specifications",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.172",
+        "FIRST FLOOR, MALE\nPRAYER ROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "22",
+        "12",
+        "264.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 264.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.173",
+        "FIRST FLOOR, MALE\nTOILET (Next to Male Prayer\nRoom), WALL FINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "2",
+        "75",
+        "150.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.174",
+        "FIRST FLOOR, MALE\nTOILET (Next to Male Prayer\nRoom), WALL FINISHES",
+        "Ablution base with TL-101, Overall size\n500x500x500 mm",
+        "As per specifications",
+        "No.",
+        "3",
+        "110",
+        "330.000"
+      ],
+      "description": "As per specifications",
+      "rate": 330.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.175",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-101",
+        "m2",
+        "70",
+        "19",
+        "1,330.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 1330.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.176",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile .",
+        "Item Code CA-102",
+        "m2",
+        "26",
+        "19",
+        "494.000"
+      ],
+      "description": "9mm Thick custom design carpet tile .",
+      "rate": 494.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.177",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.178",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "4",
+        "50",
+        "200.000"
+      ],
+      "description": "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 200.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.179",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.180",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "4",
+        "55",
+        "220.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 220.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.181",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "3",
+        "85",
+        "255.000"
+      ],
+      "description": "As per specifications",
+      "rate": 255.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.182",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Laminate with matte brushed shelf.",
+        "Item Code LA-202",
+        "m2",
+        "1",
+        "300",
+        "300.000"
+      ],
+      "description": "Laminate with matte brushed shelf.",
+      "rate": 300.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.183",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "41",
+        "20",
+        "820.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 820.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.184",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "7",
+        "20",
+        "140.000"
+      ],
+      "description": "As per specifications",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.185",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "5",
+        "70",
+        "350.000"
+      ],
+      "description": "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.186",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, WALL\nFINISHES",
+        "Open shelf",
+        "As per specifications",
+        "m2",
+        "2",
+        "90",
+        "180.000"
+      ],
+      "description": "As per specifications",
+      "rate": 180.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.187",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "44",
+        "12",
+        "528.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 528.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.188",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+        "Smooth finished cement with approved paint as per\narchitect approval.",
+        "Item Code C-01",
+        "m2",
+        "103",
+        "8",
+        "824.000"
+      ],
+      "description": "Smooth finished cement with approved paint as per\narchitect approval.",
+      "rate": 824.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.189",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off\nwhite as\nper engineer approval).",
+        "Item Code AP-101",
+        "m2",
+        "15",
+        "90",
+        "1,350.000"
+      ],
+      "description": "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+      "rate": 1350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.190",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.191",
+        "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off-\nwhite as\nper engineer approval).",
+        "Item Code AP-103",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR,\nADMINISTRATION AND\nFINANCIAL AFFAIRS\nDEPARTMENT, CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.192",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nFLOOR FINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-102",
+        "m2",
+        "59",
+        "19",
+        "1,121.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1121.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.193",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nFLOOR FINISHES",
+        "9mm Thick custom design wall to wall tile with\nunderlay",
+        "Item Code CA-104",
+        "m2",
+        "11",
+        "19",
+        "209.000"
+      ],
+      "description": "9mm Thick custom design wall to wall tile with\nunderlay",
+      "rate": 209.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.194",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nWALL FINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "28",
+        "55",
+        "1,540.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 1540.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.195",
+        "FIRST FLOOR,\nDIRECTORE'S ROOM, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "9",
+        "65",
+        "585.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 585.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.196",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nWALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "3",
+        "65",
+        "195.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 195.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.197",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nWALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "85",
+        "170.000"
+      ],
+      "description": "As per specifications",
+      "rate": 170.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.198",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nWALL FINISHES",
+        "Horizontal window curtain for window size 6200x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "201",
+        "201.000"
+      ],
+      "description": "As per specifications",
+      "rate": 201.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.199",
+        "FIRST FLOOR,\nDIRECTORE'S ROOM, WALL\nFINISHES",
+        "Art work size 600x1000 mm.",
+        "To the approval of the\nEngineer",
+        "No.",
+        "3",
+        "65",
+        "195.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 195.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.200",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nWALL FINISHES",
+        "Laminate with matte brushed shelf.",
+        "Item Code LA-201 and LA-\n102.",
+        "m2",
+        "4",
+        "85",
+        "340.000"
+      ],
+      "description": "Item Code LA-201 and LA-\n102.",
+      "rate": 340.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.201",
+        "FIRST FLOOR,\nDIRECTORE'S ROOM, WALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "7",
+        "20",
+        "140.000"
+      ],
+      "description": "As per specifications",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.202",
+        "FIRST FLOOR, DIRECTORE'S\nROOM,\nWALL FINISHES",
+        "Non-woven vinyl backed textured wallpaper cladded\nover MDF.",
+        "Item Code WP-101",
+        "m2",
+        "7",
+        "35",
+        "245.000"
+      ],
+      "description": "Non-woven vinyl backed textured wallpaper cladded\nover MDF.",
+      "rate": 245.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.203",
+        "FIRST FLOOR,\nDIRECTORE'S ROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "33",
+        "12",
+        "396.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 396.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.204",
+        "FIRST FLOOR, WAITING\nAREA, FLOOR FINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "22",
+        "19",
+        "418.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 418.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.205",
+        "FIRST FLOOR, WAITING\nAREA, FLOOR FINISHES, WALL\nFINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "14",
+        "55",
+        "770.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 770.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.206",
+        "FIRST FLOOR, WAITING\nAREA, FLOOR FINISHES, WALL\nFINISHES",
+        "12 mm thick toughened clear rippled glass.",
+        "Item Code GL-102",
+        "m2",
+        "2",
+        "110",
+        "220.000"
+      ],
+      "description": "12 mm thick toughened clear rippled glass.",
+      "rate": 220.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.207",
+        "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nWALL FINISHES",
+        "20 mm groves painted dark grey",
+        "As per specifications",
+        "m",
+        "48",
+        "20",
+        "960.000"
+      ],
+      "description": "As per specifications",
+      "rate": 960.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.208",
+        "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nWALL FINISHES",
+        "Art work size 1000x1500 mm.",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "115",
+        "230.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 230.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.209",
+        "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nWALL FINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "25",
+        "20",
+        "500.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 500.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.210",
+        "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nWALL FINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white\nboard and artificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "2",
+        "40",
+        "80.000"
+      ],
+      "description": "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nWALL FINISHES",
+      "rate": 80.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.211",
+        "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nWALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "2",
+        "55",
+        "110.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 110.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.212",
+        "FIRST FLOOR, WAITING AREA,\nFLOOR FINISHES,\nSKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "10",
+        "12",
+        "120.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 120.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.213",
+        "FIRST FLOOR, FEMALE\nTOILET (Next to Female Prayer\nRoom), WALL\nFINISHES",
+        "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size 400x1200\nmm.",
+        "Item Code MR-101",
+        "No.",
+        "2",
+        "75",
+        "150.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting vanity\nmirror low iron with lighting, overall size 400x1200\nmm.",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.214",
+        "FIRST FLOOR, FEMALE\nTOILET (Next to Female Prayer\nRoom), WALL FINISHES",
+        "Ablution base with TL-101, Overall size\n500x500x500 mm",
+        "As per specifications",
+        "No.",
+        "3",
+        "110",
+        "330.000"
+      ],
+      "description": "As per specifications",
+      "rate": 330.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.215",
+        "FIRST FLOOR, FEMALE\nPRAYER ROOM, FLOOR\nFINISHES",
+        "9mm Thick custom design wall to wall carpet with\nunderlay.",
+        "Item Code CA-106",
+        "m2",
+        "30",
+        "19",
+        "570.000"
+      ],
+      "description": "9mm Thick custom design wall to wall carpet with\nunderlay.",
+      "rate": 570.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.216",
+        "FIRST FLOOR, FEMALE\nPRAYER ROOM, WALL\nFINISHES",
+        "20 mm groves painted dark grey",
+        "As per specifications",
+        "m",
+        "22",
+        "20",
+        "440.000"
+      ],
+      "description": "As per specifications",
+      "rate": 440.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.217",
+        "FIRST FLOOR, FEMALE\nPRAYER ROOM, WALL\nFINISHES",
+        "2000 mm high temporary partition",
+        "As per specifications",
+        "m2",
+        "6",
+        "25",
+        "150.000"
+      ],
+      "description": "As per specifications",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.218",
+        "FIRST FLOOR, FEMALE\nPRAYER ROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "22",
+        "12",
+        "264.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 264.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.219",
+        "FIRST FLOOR,\nMULTIPURPOSE HALL, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "52",
+        "19",
+        "988.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 988.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.220",
+        "FIRST FLOOR, MULTIPURPOSE\nHALL,\nFLOOR FINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-102",
+        "m2",
+        "23",
+        "19",
+        "437.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 437.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.221",
+        "FIRST FLOOR, MULTIPURPOSE\nHALL,\nWALL FINISHES",
+        "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+        "Item Code GL-101",
+        "m2",
+        "19",
+        "55",
+        "1,045.000"
+      ],
+      "description": "12 mm thick toughened clear glass with vinyl sticker\nsignage.",
+      "rate": 1045.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.222",
+        "FIRST FLOOR, MULTIPURPOSE\nHALL, WALL FINISHES",
+        "Prefabricated acoustic panel, fully enclosed with\nexcellent quality fabrics. They eliminate disturbing\nnoise reflections, improve the interior acoustics,\nreduce the reverberated noise and\noffer a better acoustic environment.",
+        "Item Code AP-104",
+        "m2",
+        "53",
+        "75",
+        "3,975.000"
+      ],
+      "description": "FIRST FLOOR, MULTIPURPOSE\nHALL, WALL FINISHES",
+      "rate": 3975.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.223",
+        "FIRST FLOOR,\nMULTIPURPOSE HALL, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "4",
+        "65",
+        "260.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 260.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.224",
+        "FIRST FLOOR, MULTIPURPOSE\nHALL,\nWALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "85",
+        "170.000"
+      ],
+      "description": "As per specifications",
+      "rate": 170.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.225",
+        "FIRST FLOOR, MULTIPURPOSE\nHALL,\nWALL FINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "8",
+        "20",
+        "160.000"
+      ],
+      "description": "As per specifications",
+      "rate": 160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.226",
+        "FIRST FLOOR,\nMULTIPURPOSE HALL,\nSKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "19",
+        "12",
+        "228.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 228.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.227",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "99",
+        "19",
+        "1,881.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1881.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.228",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile",
+        "Item Code CA-102",
+        "m2",
+        "30",
+        "19",
+        "570.000"
+      ],
+      "description": "9mm Thick custom design carpet tile",
+      "rate": 570.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.229",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, FLOOR\nFINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.230",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "gypsum decorative board wall with single glass door.",
+        "",
+        "m2",
+        "23",
+        "30",
+        "690.000"
+      ],
+      "description": "gypsum decorative board wall with single glass door.",
+      "rate": 690.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.231",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "4",
+        "40",
+        "160.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.232",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.233",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "4",
+        "55",
+        "220.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 220.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.234",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "3",
+        "85",
+        "255.000"
+      ],
+      "description": "As per specifications",
+      "rate": 255.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.235",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Art work size 600x1000 mm.",
+        "To the approval of the\nEngineer",
+        "No.",
+        "2",
+        "65",
+        "130.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 130.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.236",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Art work size 1800x2200 mm.",
+        "To the approval of the\nEngineer",
+        "No.",
+        "1",
+        "260",
+        "260.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 260.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.237",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "41",
+        "20",
+        "820.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 820.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.238",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "7",
+        "20",
+        "140.000"
+      ],
+      "description": "As per specifications",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.239",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "5",
+        "70",
+        "350.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+      "rate": 350.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.240",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, WALL\nFINISHES",
+        "Open shelf",
+        "As per specifications",
+        "m2",
+        "3",
+        "90",
+        "270.000"
+      ],
+      "description": "As per specifications",
+      "rate": 270.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.241",
+        "FIRST FLOOR, COMPENSATION\nDEPARTMENT, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "45",
+        "12",
+        "540.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 540.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.242",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, CEILING",
+        "Smooth finished cement with approved paint as per\narchitect approval.",
+        "Item Code C-01",
+        "m2",
+        "136",
+        "8",
+        "1,088.000"
+      ],
+      "description": "Smooth finished cement with approved paint as per\narchitect approval.",
+      "rate": 1088.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.243",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off\nwhite as\nper engineer approval).",
+        "Item Code AP-101",
+        "m2",
+        "30",
+        "90",
+        "2,700.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, CEILING",
+      "rate": 2700.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.244",
+        "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "24",
+        "90",
+        "2,160.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION\nDEPARTMENT, CEILING",
+      "rate": 2160.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.245",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), FLOOR FINISHES",
+        "9mm Thick custom design carpet tile.",
+        "Item Code CA-101",
+        "m2",
+        "55",
+        "19",
+        "1,045.000"
+      ],
+      "description": "9mm Thick custom design carpet tile.",
+      "rate": 1045.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.246",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), FLOOR FINISHES",
+        "9mm Thick custom design carpet tile",
+        "Item Code CA-102",
+        "m2",
+        "20",
+        "19",
+        "380.000"
+      ],
+      "description": "9mm Thick custom design carpet tile",
+      "rate": 380.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.247",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), FLOOR FINISHES",
+        "9mm Thick custom design carpet tile, 3000 mm dia",
+        "Item Code CA-103",
+        "m2",
+        "7",
+        "19",
+        "133.000"
+      ],
+      "description": "9mm Thick custom design carpet tile, 3000 mm dia",
+      "rate": 133.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.248",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code LF-50",
+        "m2",
+        "3",
+        "40",
+        "120.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+      "rate": 120.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.249",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "Fabric upholstery wrapped around shelve integrated\nin the metal feature wall with white board and\nartificial plant with natural touch.",
+        "Item Code FB-101",
+        "m2",
+        "1",
+        "65",
+        "65.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+      "rate": 65.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.250",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "3",
+        "55",
+        "165.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 165.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.251",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "85",
+        "170.000"
+      ],
+      "description": "As per specifications",
+      "rate": 170.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.252",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "41",
+        "20",
+        "820.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 820.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.253",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "Gypsum board finished with texture paint with\nprovision for LED light.",
+        "As per specifications",
+        "m2",
+        "7",
+        "20",
+        "140.000"
+      ],
+      "description": "As per specifications",
+      "rate": 140.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.254",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+        "White board integrated in the metal feature wall and\nartificial plant with natural touch.",
+        "Item Code WB-101",
+        "m2",
+        "3",
+        "70",
+        "210.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), WALL FINISHES",
+      "rate": 210.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.255",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to\nMPH), SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+        "Item Code SK-101",
+        "m",
+        "33",
+        "12",
+        "396.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting HDPE\nwood skirting.",
+      "rate": 396.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.256",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to MPH), CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the\nceiling. Ceiling above to be painted.",
+        "Item Code AP-102",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to MPH), CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.257",
+        "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to MPH), CEILING",
+        "Prefabricated acoustic panel with custom design,\nfully enclosed with excellent quality fabrics. They\neliminate disturbing noise reflections, improve the\ninterior acoustics, reduce the reverberated noise\nand offer a better acoustic environment suspended\nfrom the ceiling. Ceiling above to be painted (off-\nwhite as\nper engineer approval).",
+        "Item Code AP-103",
+        "m2",
+        "19",
+        "90",
+        "1,710.000"
+      ],
+      "description": "FIRST FLOOR,\nCOMPENSATION DEPARTMENT\n(Next to MPH), CEILING",
+      "rate": 1710.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.258",
+        "FIRST FLOOR, SERVER\nROOM, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "19",
+        "12",
+        "228.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 228.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.259",
+        "FIRST FLOOR, IT STORE,\nWALL FINISHES",
+        "Horizontal window curtain for window size\n6200x2800 mm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "201",
+        "201.000"
+      ],
+      "description": "As per specifications",
+      "rate": 201.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.260",
+        "FIRST FLOOR, IT STORE,\nSKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "23",
+        "12",
+        "276.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 276.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.261",
+        "FIRST FLOOR, MALE\nTOILET (Next to Sraff Cafe),\nWALL FINISHES",
+        "Silver mirror 6mm thick with dark grey lighting\nvanity mirror low iron with lighting, overall size\n400x1200 mm.",
+        "Item Code MR-101",
+        "No.",
+        "2",
+        "75",
+        "150.000"
+      ],
+      "description": "Silver mirror 6mm thick with dark grey lighting\nvanity mirror low iron with lighting, overall size\n400x1200 mm.",
+      "rate": 150.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.262",
+        "FIRST FLOOR, MALE\nTOILET (Next to Sraff Cafe),\nWALL FINISHES",
+        "20 mm thick artificial stone ledge wall top and\ncounter top.",
+        "Item Code ST-101",
+        "m",
+        "2",
+        "52",
+        "104.000"
+      ],
+      "description": "20 mm thick artificial stone ledge wall top and\ncounter top.",
+      "rate": 104.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.263",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, FLOOR\nFINISHES",
+        "Cool white marble 1200x600x20mm thick stone as\nper approved sample including cement sand\nscreed.",
+        "Item Code MA-101",
+        "m2",
+        "60",
+        "42",
+        "2,520.000"
+      ],
+      "description": "Cool white marble 1200x600x20mm thick stone as\nper approved sample including cement sand\nscreed.",
+      "rate": 2520.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.264",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL\nFINISHES",
+        "Art work (overall size 2000x2000 mm)",
+        "To the approval of the\nEngineer",
+        "No.",
+        "1",
+        "275",
+        "275.000"
+      ],
+      "description": "To the approval of the\nEngineer",
+      "rate": 275.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.265",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL\nFINISHES",
+        "Natural wood veneer cladded MDF panel.",
+        "Item Code WD-101",
+        "m2",
+        "10",
+        "65",
+        "650.000"
+      ],
+      "description": "Natural wood veneer cladded MDF panel.",
+      "rate": 650.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.266",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL\nFINISHES",
+        "Horizontal window curtain for window size 2600x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "1",
+        "85",
+        "85.000"
+      ],
+      "description": "As per specifications",
+      "rate": 85.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.267",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL FINISHES",
+        "Horizontal window curtain for window size 6200x2800\nmm.",
+        "As per specifications",
+        "No.",
+        "2",
+        "201",
+        "402.000"
+      ],
+      "description": "As per specifications",
+      "rate": 402.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.268",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL FINISHES",
+        "Black color PVD coated stainless steel.",
+        "Item Code MT-101",
+        "m",
+        "9",
+        "20",
+        "180.000"
+      ],
+      "description": "Black color PVD coated stainless steel.",
+      "rate": 180.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.269",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL\nFINISHES",
+        "Base cabinet with korean countertop.",
+        "Item Code LF-29A",
+        "m",
+        "7",
+        "140",
+        "980.000"
+      ],
+      "description": "Base cabinet with korean countertop.",
+      "rate": 980.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.270",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, WALL\nFINISHES",
+        "Overhead cabinet including gypsum board painted\nwith same color match to cabinet and\nshall be cover the area above up to ceiling.",
+        "Item Code LF-29A",
+        "m",
+        "7",
+        "155",
+        "1,085.000"
+      ],
+      "description": "Overhead cabinet including gypsum board painted\nwith same color match to cabinet and\nshall be cover the area above up to ceiling.",
+      "rate": 1085.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.271",
+        "FIRST FLOOR, STAFF\nLOUNGE/CAFÉ, SKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "30",
+        "12",
+        "360.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 360.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.272",
+        "FIRST FLOOR, PASSAGE,\nSKIRTING",
+        "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+        "Item Code SK-101",
+        "m",
+        "34",
+        "12",
+        "408.000"
+      ],
+      "description": "18 thickness, 100 mm high solid wood skirting\nHDPE wood skirting.",
+      "rate": 408.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.273",
+        "FIRST FLOOR, PASSAGE,\nCEILING",
+        "white oak veneered Wood Slats suspended from\nceiling. Open ceiling above to be painted\n(off-white as per engineer approval).",
+        "Item Code WS-101",
+        "m2",
+        "40",
+        "35",
+        "1,400.000"
+      ],
+      "description": "white oak veneered Wood Slats suspended from\nceiling. Open ceiling above to be painted\n(off-white as per engineer approval).",
+      "rate": 1400.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.274",
+        "FLOOR FINISHES",
+        "supply and fix of self leveling below carpet and\nany other requirment needed to final fix of carpet",
+        "",
+        "LS",
+        "1",
+        "10500",
+        "10,500.000"
+      ],
+      "description": "supply and fix of self leveling below carpet and\nany other requirment needed to final fix of carpet",
+      "rate": 10500.0
+    },
+    {
+      "category": "fitout",
+      "raw_data": [
+        "Bill No. 2.275",
+        "FLOOR FINISHES",
+        "3mm stainless steel trim to be considered where\nchange of flooring materials, SS trim as per\napproved sample.",
+        "",
+        "LS",
+        "1",
+        "8000",
+        "8,000.000"
+      ],
+      "description": "3mm stainless steel trim to be considered where\nchange of flooring materials, SS trim as per\napproved sample.",
+      "rate": 8000.0
+    }
+  ],
+  "materials": {}
+}

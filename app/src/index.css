@@ -1,0 +1,811 @@
+@import "tailwindcss";
+
+/**
+ * Design & Build - Premium Design System
+ * Production-grade Architectural Suite OS
+ * Gallery White (Day) ↔ Obsidian Dark (Night) Themes
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ============================================================================
+   Theme Configuration - Near-Instant Switching
+   ============================================================================ */
+
+:root {
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --transition-instant: all 0.15s ease-out;
+  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-standard: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-xl: 1.25rem;
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+}
+
+/* ============================================================================
+   OBSIDIAN DARK (Night Theme) - Sleek Professional Dark
+   ============================================================================ */
+
+[data-theme='night'] {
+  /* Core Colors */
+  --bg-primary: #0A0A0B;
+  --bg-secondary: #111113;
+  --bg-sidebar: #111113;
+  --bg-header: #0D0D0E;
+  --bg-card: #171719;
+  --bg-active: #1E1E21;
+  --bg-hover: #252528;
+
+  /* Glassmorphism - Premium (Opaque for Visibility) */
+  --glass-bg: #0A0A0B;
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --glass-highlight: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+
+  /* Accents - Vibrant */
+  --accent-primary: #3B82F6;
+  --accent-secondary: #FBBF24;
+  --accent-tertiary: #8B5CF6;
+  --accent-glow: rgba(59, 130, 246, 0.4);
+  --accent-gold-glow: rgba(251, 191, 36, 0.4);
+
+  /* Text Hierarchy */
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
+  --text-disabled: #4B5563;
+
+  /* Borders */
+  --border-main: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --border-focus: rgba(59, 130, 246, 0.5);
+
+  /* Slider Gradients */
+  --slider-track: linear-gradient(90deg, #1F2937 0%, #374151 100%);
+  --slider-fill: linear-gradient(90deg, #3B82F6 0%, #60A5FA 100%);
+  --slider-thumb: #FFFFFF;
+  --slider-thumb-glow: 0 0 12px rgba(59, 130, 246, 0.6);
+
+  /* 3D Viewport */
+  --floor-color: #141416;
+  --grid-color: rgba(255, 255, 255, 0.03);
+}
+
+/* ============================================================================
+   GALLERY WHITE (Day Theme) - Clean Minimal Light
+   ============================================================================ */
+
+[data-theme='day'] {
+  /* Core Colors - Gemini Style */
+  --bg-primary: #F0F4F9;
+  --bg-secondary: #FFFFFF;
+  --bg-sidebar: #FFFFFF;
+  --bg-header: #F0F4F9;
+  --bg-card: #FFFFFF;
+  --bg-active: #E1E5EA;
+  --bg-hover: #E9EEF4;
+
+  /* Glassmorphism - Light (Gemini Minimalist) */
+  --glass-bg: #FFFFFF;
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.03);
+  --glass-highlight: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, transparent 50%);
+
+  /* Accents - Architectural */
+  --accent-primary: #2563EB;
+  --accent-secondary: #059669;
+  --accent-tertiary: #7C3AED;
+  --accent-glow: rgba(37, 99, 235, 0.2);
+  --accent-gold-glow: rgba(5, 150, 105, 0.2);
+
+  /* Text Hierarchy */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --text-disabled: #CBD5E1;
+
+  /* Borders */
+  --border-main: rgba(0, 0, 0, 0.06);
+  --border-strong: rgba(0, 0, 0, 0.1);
+  --border-focus: rgba(37, 99, 235, 0.5);
+
+  /* Slider Gradients */
+  --slider-track: linear-gradient(90deg, #E2E8F0 0%, #CBD5E1 100%);
+  --slider-fill: linear-gradient(90deg, #2563EB 0%, #60A5FA 100%);
+  --slider-thumb: #FFFFFF;
+  --slider-thumb-glow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  /* 3D Viewport */
+  --floor-color: #E5E7EB;
+  --grid-color: rgba(0, 0, 0, 0.04);
+}
+
+/* ============================================================================
+   Base Styles - Instant Theme Transitions
+   ============================================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.15s ease-out, color 0.15s ease-out;
+}
+
+/* Instant theme transitions for all elements */
+*:not(input):not(textarea) {
+  transition: background-color 0.15s ease-out,
+    border-color 0.15s ease-out,
+    color 0.15s ease-out,
+    box-shadow 0.15s ease-out;
+}
+
+/* ============================================================================
+   Typography
+   ============================================================================ */
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.data-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ============================================================================
+   Premium Glassmorphism Modals (85% opacity, 12px blur)
+   ============================================================================ */
+
+/* Modal Overlay - Robust Centering */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  padding: 2rem;
+}
+
+.glass-modal {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow) !important;
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.glass-modal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--glass-highlight);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.modal-backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+/* ============================================================================
+   Header & Sidebars
+   ============================================================================ */
+
+header {
+  background-color: var(--bg-header);
+  border-bottom: 1px solid var(--border-main);
+  height: 56px;
+  backdrop-filter: blur(12px);
+  z-index: 50;
+}
+
+.sidebar {
+  background-color: var(--bg-sidebar);
+  border-color: var(--border-main);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+  z-index: 40;
+}
+
+/* ============================================================================
+   PREMIUM SLIDERS with Descriptive Labels
+   ============================================================================ */
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.slider-labels .label-low {
+  color: var(--text-muted);
+}
+
+.slider-labels .label-high {
+  color: var(--accent-primary);
+}
+
+/* Base Slider Styles */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--slider-track);
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Track - WebKit */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--slider-track);
+  border-radius: 8px;
+  border: none;
+}
+
+/* Thumb - WebKit */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--slider-thumb);
+  border: 3px solid var(--accent-primary);
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: var(--slider-thumb-glow), 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-top: -7px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: var(--slider-thumb-glow), 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.1);
+  border-color: var(--accent-tertiary);
+}
+
+/* Thumb - Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: var(--slider-thumb);
+  border: 3px solid var(--accent-primary);
+  border-radius: 50%;
+  cursor: grab;
+  box-shadow: var(--slider-thumb-glow);
+}
+
+/* Disabled State */
+input[type="range"]:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+input[type="range"]:disabled::-webkit-slider-thumb {
+  cursor: not-allowed;
+  border-color: var(--text-disabled);
+}
+
+/* Special Slider Styles */
+
+/* Sun Intensity Slider - Warm Gradient */
+.slider-sun::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #1F2937 0%, #FCD34D 50%, #F59E0B 100%);
+}
+
+/* Temperature Slider - Cool to Warm */
+.slider-temperature::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #60A5FA 0%, #FFFFFF 50%, #FBBF24 100%);
+}
+
+/* Ambient Slider - Dark to Light */
+.slider-ambient::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #0F172A 0%, #475569 50%, #E2E8F0 100%);
+}
+
+/* Shadow Slider - Soft to Hard */
+.slider-shadow::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #334155 0%, #1E293B 100%);
+}
+
+/* ============================================================================
+   Premium Buttons
+   ============================================================================ */
+
+.btn-premium {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #1D4ED8 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+  border: none;
+  box-shadow: 0 4px 20px var(--accent-glow);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-premium:hover::before {
+  left: 100%;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--accent-glow);
+  filter: brightness(1.1);
+}
+
+.btn-premium:active {
+  transform: translateY(0);
+}
+
+/* Ghost Button */
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: var(--transition-fast);
+  border: 1px solid var(--border-main);
+}
+
+.btn-ghost:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+/* Icon Button */
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  transition: var(--transition-fast);
+}
+
+.btn-icon:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-main);
+}
+
+.btn-icon.active {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+/* ============================================================================
+   Toggle Switch - Premium
+   ============================================================================ */
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: var(--bg-active);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  border: 1px solid var(--border-main);
+}
+
+.toggle-switch.active {
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #2563EB 100%);
+  border-color: var(--accent-primary);
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: var(--transition-fast);
+}
+
+.toggle-switch.active::after {
+  left: 22px;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+/* ============================================================================
+   Environment Preset Cards
+   ============================================================================ */
+
+.preset-card {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-main);
+  background: var(--bg-card);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.preset-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(59, 130, 246, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.preset-card:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.preset-card:hover::before {
+  opacity: 1;
+}
+
+.preset-card.active {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+/* ============================================================================
+   Surveyor AI Ticker
+   ============================================================================ */
+
+.ticker-bar {
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%) !important;
+  border-top: 2px solid var(--accent-primary) !important;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+  height: 56px;
+}
+
+.ticker-glow {
+  color: var(--accent-secondary);
+  text-shadow: 0 0 20px var(--accent-gold-glow);
+  font-weight: 800;
+  font-family: var(--font-mono);
+}
+
+/* ============================================================================
+   Cards & Panels
+   ============================================================================ */
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+}
+
+.panel-section {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-main);
+}
+
+.panel-section:last-child {
+  border-bottom: none;
+}
+
+.panel-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel-title svg {
+  color: var(--accent-primary);
+}
+
+/* ============================================================================
+   3D Viewport Container
+   ============================================================================ */
+
+.canvas-container {
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle at 50% 50%, var(--bg-active) 0%, var(--bg-primary) 100%);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ============================================================================
+   Scrollbars - Minimal
+   ============================================================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ============================================================================
+   Utility Classes
+   ============================================================================ */
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.text-gold {
+  color: var(--accent-secondary);
+}
+
+.text-accent-gold {
+  color: var(--accent-secondary);
+}
+
+.bg-surface {
+  background-color: var(--bg-secondary);
+}
+
+.border-ui {
+  border: 1px solid var(--border-main);
+}
+
+.pro-shadow {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================================
+   Animations
+   ============================================================================ */
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 5px var(--accent-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 20px var(--accent-glow);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ============================================================================
+   CAD Editor Specific Styles
+   ============================================================================ */
+
+.cad-editor {
+  background: var(--glass-bg);
+}
+
+.cad-toolbar {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-bottom: 1px solid var(--border-main);
+}
+
+.cad-canvas {
+  background: linear-gradient(135deg, #0a0a0b 0%, #111113 100%);
+}
+
+.cad-grid {
+  background-image:
+    radial-gradient(circle, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(59, 130, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.04) 1px, transparent 1px);
+  background-size: 8px 8px, 40px 40px, 40px 40px;
+}
+
+/* ============================================================================
+   Modal Specific Improvements
+   ============================================================================ */
+
+.modal-header {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border-bottom: 1px solid var(--border-main);
+  padding: 1.25rem 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-footer {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-top: 1px solid var(--border-main);
+  padding: 1rem 1.5rem;
+}
+
+/* Export Option Cards */
+.export-option {
+  background: var(--bg-card);
+  border: 1px solid var(--border-main);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.export-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-tertiary) 100%);
+  transform: scaleY(0);
+  transition: transform 0.2s ease;
+}
+
+.export-option:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-hover);
+}
+
+.export-option:hover::before {
+  transform: scaleY(1);
+}
+
+.export-option.loading {
+  border-color: var(--accent-primary);
+}
+
+.export-option.success {
+  border-color: #10B981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+/* QR Code Container */
+.qr-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================================
+   Focus States - Accessibility
+   ============================================================================ */
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   Selection
+   ============================================================================ */
+
+::selection {
+  background: var(--accent-primary);
+  color: white;
+}
