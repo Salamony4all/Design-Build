@@ -32,6 +32,21 @@ const FONTS = {
 };
 
 // ============================================================================
+// Sanitization Helper
+// ============================================================================
+
+/**
+ * Sanitize strings for PPTX/XML compatibility
+ * Removes control characters and handles null/undefined
+ */
+const sanitize = (val) => {
+    if (val === null || val === undefined) return '';
+    const str = String(val);
+    // Remove illegal XML characters (control characters 0x00-0x1F except 0x09, 0x0A, 0x0D)
+    return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
+};
+
+// ============================================================================
 // Generate Complete 10-Slide PPTX
 // ============================================================================
 
@@ -79,11 +94,19 @@ export async function generateCompletePPTX() {
                     options: { x: 0.5, y: 6.95, w: 5, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.primary }
                 }
             },
-            // Page number placeholder
+            // Page number placeholder (Native PPTX type)
             {
                 text: {
-                    text: '{{slideNumber}} / {{slideCount}}',
-                    options: { x: 8.5, y: 6.95, w: 1, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.mono, align: 'right' }
+                    text: 'Page ',
+                    options: { x: 8.5, y: 6.95, w: 1, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.primary, align: 'right' }
+                }
+            },
+            {
+                rect: { x: 9.3, y: 6.95, w: 0.3, h: 0.3, fill: { color: BRAND_COLORS.darker } }
+            },
+            {
+                text: {
+                    options: { x: 9.1, y: 6.95, w: 0.4, h: 0.3, fontSize: 8, color: BRAND_COLORS.primary, fontFace: FONTS.mono, align: 'center', type: 'slideNumber' }
                 }
             },
         ],
@@ -202,10 +225,11 @@ export async function generateCompletePPTX() {
     ];
 
     principles.forEach((principle, i) => {
+        const pStr = sanitize(principle);
         // Extract key part if too long
-        const displayText = principle.length > 80 ?
-            principle.substring(0, 77) + '...' :
-            principle;
+        const displayText = pStr.length > 80 ?
+            pStr.substring(0, 77) + '...' :
+            pStr;
 
         slide2.addText(`◆ ${displayText}`, {
             x: 0.5, y: 2.8 + (i * 0.6), w: 9, h: 0.5,
@@ -252,10 +276,10 @@ export async function generateCompletePPTX() {
 
     // Room breakdown table
     const roomTableData = detectedRooms.map((room, i) => [
-        { text: `${i + 1}`, options: { align: 'center' } },
-        { text: room.label },
-        { text: room.type?.replace(/_/g, ' ') || 'General' },
-        { text: `${room.area || 30} m²`, options: { align: 'right' } },
+        { text: sanitize(i + 1), options: { align: 'center' } },
+        { text: sanitize(room.label) },
+        { text: sanitize(room.type?.replace(/_/g, ' ') || 'General') },
+        { text: sanitize(`${room.area || 30} m²`), options: { align: 'right' } },
     ]);
 
     if (roomTableData.length > 0) {
@@ -563,12 +587,12 @@ export async function generateCompletePPTX() {
     ];
 
     const boqRows = selectedItems.slice(0, 8).map(item => [
-        { text: item.itemCode || 'LF-XX' },
-        { text: item.name || item.description || 'Item' },
-        { text: item.unit || 'Nos.' },
-        { text: String(item.quantity || 1), options: { align: 'center' } },
-        { text: `${(item.rate || 0).toFixed(2)}`, options: { align: 'right' } },
-        { text: `${((item.rate || 0) * (item.quantity || 1)).toFixed(2)}`, options: { align: 'right' } },
+        { text: sanitize(item.itemCode || 'LF-XX') },
+        { text: sanitize(item.name || item.description || 'Item') },
+        { text: sanitize(item.unit || 'Nos.') },
+        { text: sanitize(String(item.quantity || 1)), options: { align: 'center' } },
+        { text: sanitize((item.rate || 0).toFixed(2)), options: { align: 'right' } },
+        { text: sanitize(((item.rate || 0) * (item.quantity || 1)).toFixed(2)), options: { align: 'right' } },
     ]);
 
     slide9.addTable([boqHeader, ...boqRows], {

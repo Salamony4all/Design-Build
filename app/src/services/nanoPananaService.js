@@ -71,9 +71,9 @@ function safeJsonParse(text, fallback = null) {
     // Second pass: structural repair
     try {
         let repaired = cleaned
-            // Fix unescaped quotes inside strings (very aggressive)
+            // Fix unescaped quotes inside strings (but avoid breaking JSON structure)
             .replace(/: "(.*?)"/g, (match, p1) => {
-                const escaped = p1.replace(/"/g, '\\"');
+                const escaped = p1.replace(/(?<!\\)"/g, '\\"');
                 return `: "${escaped}"`;
             })
             // Fix missing commas between array objects/elements
@@ -89,20 +89,39 @@ function safeJsonParse(text, fallback = null) {
         // Remove trailing commas before closing symbols
         repaired = repaired.replace(/,\s*([\}\]])/g, '$1');
 
-        // Fix unterminated strings at the very end (common in truncated responses)
-        const totalQuotes = (repaired.match(/"/g) || []).length;
-        if (totalQuotes % 2 !== 0) {
-            repaired += '"';
-        }
+        // Robust handling of truncated JSON
+        // 1. Fix unterminated values
+        repaired = repaired.trim();
+        if (repaired.endsWith(':')) repaired += ' null';
+        if (repaired.endsWith(',')) repaired = repaired.slice(0, -1);
 
-        // Brace balancing for truncated responses
+        // 2. Fix unterminated strings
+        let openQuotes = 0;
+        for (let i = 0; i < repaired.length; i++) {
+            if (repaired[i] === '"' && (i === 0 || repaired[i - 1] !== '\\')) {
+                openQuotes++;
+            }
+        }
+        if (openQuotes % 2 !== 0) repaired += '"';
+
+        // 3. Brace balancing for truncated responses
         const stack = [];
         for (let i = 0; i < repaired.length; i++) {
-            if (repaired[i] === '{') stack.push('}');
-            else if (repaired[i] === '[') stack.push(']');
-            else if (repaired[i] === '}' || repaired[i] === ']') {
-                if (stack.length > 0 && stack[stack.length - 1] === repaired[i]) {
-                    stack.pop();
+            let char = repaired[i];
+
+            // Determine if we are inside a string to avoid balancing inside quotes
+            let isInsideString = false;
+            let qCount = 0;
+            for (let j = 0; j <= i; j++) if (repaired[j] === '"' && (j === 0 || repaired[j - 1] !== '\\')) qCount++;
+            isInsideString = qCount % 2 !== 0;
+
+            if (!isInsideString) {
+                if (char === '{') stack.push('}');
+                else if (char === '[') stack.push(']');
+                else if (char === '}' || char === ']') {
+                    if (stack.length > 0 && stack[stack.length - 1] === char) {
+                        stack.pop();
+                    }
                 }
             }
         }
@@ -114,32 +133,20 @@ function safeJsonParse(text, fallback = null) {
         try {
             return JSON.parse(repaired);
         } catch (innerErr) {
-            // Third pass: aggressively clean common control character artifacts
-            const deepCleaned = repaired
-                .replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove non-printable chars
-                .replace(/\s+/g, " ") // Normalize whitespace
-                .trim();
-
-            try {
-                return JSON.parse(deepCleaned);
-            } catch (deepErr) {
-                // Fourth pass: try regex extraction of the first {} block
-                const match = deepCleaned.match(/\{[\s\S]*\}/);
-                if (match) {
-                    try {
-                        return JSON.parse(match[0]);
-                    } catch (finalErr) {
-                        console.error('[Nano Panana Pro] All JSON repair attempts exhausted.');
-                        throw finalErr;
-                    }
-                }
-                throw deepErr;
+            // Aggressive cleaning: find the last valid object boundary
+            let lastClosing = Math.max(repaired.lastIndexOf('}'), repaired.lastIndexOf(']'));
+            if (lastClosing > 0) {
+                try {
+                    return JSON.parse(repaired.substring(0, lastClosing + 1));
+                } catch (e) { /* continue */ }
             }
+            throw innerErr;
         }
-    } catch (repairErr) {
-        console.error('[Nano Panana Pro] JSON repair pipeline failed:', repairErr.message);
-        return fallback;
     }
+    } catch (repairErr) {
+    console.error('[Nano Panana Pro] JSON repair pipeline failed:', repairErr.message);
+    return fallback;
+}
 }
 
 /**
