@@ -36,14 +36,19 @@ const FONTS = {
 // ============================================================================
 
 /**
- * Sanitize strings for PPTX/XML compatibility
- * Removes control characters and handles null/undefined
+ * Aggressive Sanitization for PPTX/XML compatibility
+ * Removes ALL illegal XML characters and control characters
+ * Also handles null/undefined
  */
 const sanitize = (val) => {
     if (val === null || val === undefined) return '';
     const str = String(val);
-    // Remove illegal XML characters (control characters 0x00-0x1F except 0x09, 0x0A, 0x0D)
-    return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '');
+    // 1. Remove control characters (0-31) except whitespace (9, 10, 13)
+    // 2. Remove other common XML-unfriendly characters if needed
+    // 3. Keep standard printable ASCII + common Latin-1
+    return str.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\uFFFE\uFFFF]/g, '')
+        .replace(/&(?!(amp|lt|gt|quot|apos);)/g, '&amp;') // Fix raw ampersands
+        .trim();
 };
 
 // ============================================================================
@@ -90,23 +95,15 @@ export async function generateCompletePPTX() {
             // Footer text
             {
                 text: {
-                    text: `${project.client} | Design & Build`,
+                    text: `${sanitize(project.client)} | Design & Build`,
                     options: { x: 0.5, y: 6.95, w: 5, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.primary }
                 }
             },
-            // Page number placeholder (Native PPTX type)
+            // Simplified Page number (No native type for now to ensure compatibility)
             {
                 text: {
-                    text: 'Page ',
-                    options: { x: 8.5, y: 6.95, w: 1, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.primary, align: 'right' }
-                }
-            },
-            {
-                rect: { x: 9.3, y: 6.95, w: 0.3, h: 0.3, fill: { color: BRAND_COLORS.darker } }
-            },
-            {
-                text: {
-                    options: { x: 9.1, y: 6.95, w: 0.4, h: 0.3, fontSize: 8, color: BRAND_COLORS.primary, fontFace: FONTS.mono, align: 'center', type: 'slideNumber' }
+                    text: 'Architectural Design Proposal 2026',
+                    options: { x: 7.5, y: 6.95, w: 2, h: 0.3, fontSize: 8, color: BRAND_COLORS.muted, fontFace: FONTS.mono, align: 'right' }
                 }
             },
         ],
@@ -130,7 +127,7 @@ export async function generateCompletePPTX() {
     });
 
     // Main title
-    slide1.addText(project.name || 'Design Proposal', {
+    slide1.addText(sanitize(project.name || 'Design Proposal'), {
         x: 0.5, y: 2.7, w: 9, h: 1.2,
         fontSize: 44, fontFace: FONTS.primary, bold: true,
         color: BRAND_COLORS.light,
@@ -194,7 +191,7 @@ export async function generateCompletePPTX() {
         }[activeStyle]) ||
         'Human-Centric Contemporary Design - Thoughtfully designed spaces that balance form, function, and aesthetics.';
 
-    slide2.addText(designPhilosophy, {
+    slide2.addText(sanitize(designPhilosophy), {
         x: 0.5, y: 1.3, w: 9, h: 1.2,
         fontSize: 16, fontFace: FONTS.primary, italic: true,
         color: BRAND_COLORS.text,
@@ -410,7 +407,7 @@ export async function generateCompletePPTX() {
     const matRationale = nanoBananaData.materialPalette?.[0]?.rationale
         || 'Materials selected for durability, aesthetics, and sustainability. All finishes are low-VOC certified and sourced from approved suppliers.';
 
-    slide4.addText(matRationale, {
+    slide4.addText(sanitize(matRationale), {
         x: 0.5, y: 4.6, w: 9, h: 0.8,
         fontSize: 12, fontFace: FONTS.primary,
         color: BRAND_COLORS.text,
@@ -506,7 +503,7 @@ export async function generateCompletePPTX() {
     keyRooms.forEach((room, idx) => {
         const slide = pptx.addSlide({ masterName: 'DNB_MASTER' });
 
-        slide.addText(`Room Detail: ${room.label}`, {
+        slide.addText(`Room Detail: ${sanitize(room.label)}`, {
             x: 0.5, y: 0.5, w: 9, h: 0.6,
             fontSize: 28, fontFace: FONTS.primary, bold: true,
             color: BRAND_COLORS.light,
@@ -557,7 +554,7 @@ export async function generateCompletePPTX() {
                 color: BRAND_COLORS.muted,
             });
 
-            slide.addText(spec[1], {
+            slide.addText(sanitize(spec[1]), {
                 x: 7.7, y: 1.7 + (i * 0.6), w: 2, h: 0.4,
                 fontSize: 10, fontFace: FONTS.primary, bold: true,
                 color: BRAND_COLORS.text, align: 'right',
@@ -625,13 +622,13 @@ export async function generateCompletePPTX() {
     ];
 
     costItems.forEach((item, i) => {
-        slide10.addText(item.label, {
+        slide10.addText(sanitize(item.label), {
             x: 2, y: 1.5 + (i * 0.6), w: 4, h: 0.4,
             fontSize: 14, fontFace: FONTS.primary,
             color: BRAND_COLORS.text,
         });
 
-        slide10.addText(`${(item.value || 0).toFixed(3)} OMR`, {
+        slide10.addText(`${sanitize((item.value || 0).toFixed(3))} OMR`, {
             x: 6, y: 1.5 + (i * 0.6), w: 2, h: 0.4,
             fontSize: 14, fontFace: FONTS.mono,
             color: BRAND_COLORS.text, align: 'right',
